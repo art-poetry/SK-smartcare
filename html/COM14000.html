@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header noBorder">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <a href="#" class="btnBack"><span class="hidden">back</span></a>
+          <h2>공통스타일 작업</h2>
+        </div>
+        <div class="headerTools">
+          <a href="#" class="btnAlarm"><span class="hidden">alarm</span></a>
+          <button href="#" class="btnMenuOpen">
+            <span class="hidden">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- contents / setting -->
+    <div class="contents">
+      <!-- defaultTab -->
+      <ul class="tabTopLine">
+        <li><a href="#" class="on">기본탭.on</a></li>
+        <li><a href="#">기본탭</a></li>
+      </ul>
+      <!-- //defaultTab -->
+
+      <!-- 설명 -->
+      <div style="margin: 20px 0">
+        <p>
+          상단은 기본탭 형태
+          <span style="font-size: 12px; font-weight: 500; color: #105ec8"
+            >(하단 10px margin넣어둠)</span
+          >
+        </p>
+      </div>
+      <!-- //설명 -->
+
+      <!-- 설명 -->
+      <div style="margin-top: 20px;">
+        <p>
+          검색창 기본<br />
+          <span style="font-size: 12px; font-weight: 500; color: #105ec8"
+            >(margin-top:30px / margin-bottom: 20px 넣어둠)</span
+          >
+        </p>
+      </div>
+      <!-- //설명 -->
+
+      <input type="text" class="inputSearch" />
+
+      <!-- 설명 -->
+      <div style="margin-bottom: 20px;">
+        <p style="margin-top: 10px">
+          하단은 <span class="letterSpacing">dot</span>불릿 리스트 형태
+        </p>
+      </div>
+      <!-- //설명 -->
+
+      <!-- bulletList -->
+      <ul class="bulDotList">
+        <li>dot불릿의 리스트형태입니다.</li>
+        <li>
+          <strong><span class="letterSpacing">strong</span>태그</strong>는 강조
+          오렌지컬러 텍스트입니다.
+        </li>
+        <li>
+          숫자와 영문은 자간이 0입니다.
+          <span class="letterSpacing">letterSpacing</span> 클래스를 넣어주세요.
+        </li>
+      </ul>
+      <!-- //bulletList -->
+
+      <!-- 설명 -->
+      <div style="margin: 20px 0">
+        <p style="margin-top: 10px">
+          하단은 <span class="letterSpacing">number</span>불릿 리스트 형태
+        </p>
+      </div>
+      <!-- //설명 -->
+
+      <!-- bulletList -->
+      <ul class="numList">
+        <li><strong class="numBullet">1</strong>숫자 불릿이 붙는 기본리스트</li>
+        <li>
+          <strong class="numBullet">2</strong>li안에 strong으로 숫자를
+          넣어주세요.
+        </li>
+        <li>
+          <strong class="numBullet">3</strong>부분적으로 달라지는 스타일은
+        </li>
+        <li>
+          <strong class="numBullet">4</strong>개별페이지 css나 멀티클래스로
+          제어해주세요.
+        </li>
+      </ul>
+      <!-- //bulletList -->
+
+      <!-- 설명 -->
+      <div style="margin: 20px 0">
+        <p>
+          하단은 버튼탭 형태
+          <span style="font-size: 12px; font-weight: 500; color: #105ec8"
+            >(상하단 20px margin넣어둠)</span
+          >
+        </p>
+      </div>
+      <!-- //설명 -->
+
+      <!-- btnsTab -->
+      <ul class="btnsTab">
+        <li><a href="#" class="on">1개월</a></li>
+        <li><a href="#">3개월</a></li>
+        <li><a href="#">6개월</a></li>
+        <li><a href="#">전체</a></li>
+      </ul>
+      <!-- //btnsTab -->
+
+      <!-- 설명 -->
+      <div style="margin: 20px 0 10px">
+        <p>하단은 <span class="letterSpacing">summary</span>형태</p>
+        <p style="font-size: 12px; font-weight: 500; color: #105ec8">
+          separate 클래스는 구분영역에 100%로 꽉찬 두꺼운 회색보더가 들어가는
+          형태의 클래스입니다. 그런 스타일이 아닌 곳에 넣을 필요없습니다.
+        </p>
+        <p style="font-size: 12px; font-weight: 500">
+          * 회색보더 나타난 다음 영역에서 꼭 padding값을 +10px 해주어야 합니다.
+          (원래의 공간보다 10px 더 주어야 합니다.)
+        </p>
+      </div>
+      <!-- //설명 -->
+
+      <!-- summary -->
+      <section class="separate summary">
+        <div class="account">
+          <p class="name">홍길동님</p>
+          <span class="id">(abc1234)</span>
+        </div>
+        <div class="btnLogout">
+          <a href="#" class="btnGhostRound">로그아웃</a>
+        </div>
+      </section>
+      <!-- //summary -->
+
+      <!-- infoBox -->
+      <section class="separate">
+        <!-- 버튼형태 -->
+        <!-- 버튼은 설명과 짬뽕 -->
+        <div style="margin: 20px 0">
+          <div aaastyle="margin: 5px 0">
+            <!-- 설명 -->
+            <div style="padding: 30px 0 10px">
+              <p>
+                기본 버튼
+                <span
+                  style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #105ec8;
+                    letter-spacing: 0;
+                  "
+                  >border-radius 7px</span
+                >
+              </p>
+              <p style="font-size: 12px">
+                모든 버튼에 멀티클래스로
+                <span class="letterSpacing">rRect</span>를 붙여주면
+                <span class="letterSpacing">border-radius 3px</span>이 됩니다.
+              </p>
+              <p style="font-size: 12px">
+                모든 버튼에 멀티클래스로
+                <span class="letterSpacing">btnMedium</span> 붙여주면 높이45px
+                버튼이 됩니다.
+              </p>
+              <p style="font-size: 12px">
+                사이즈는 필요하면
+                <span class="letterSpacing">mini small big</span>으로 추가
+                예정입니다.
+              </p>
+            </div>
+            <!-- //설명 -->
+            <button class="btnSolid">
+              <span class="letterSpacing">btnSolid</span>
+            </button>
+          </div>
+          <div style="margin: 10px 0 20px">
+            <!-- 설명 -->
+            <div style="margin: 10px 0">
+              <p>
+                기본 버튼에 <span class="letterSpacing">Ghost</span>스타일
+                <span
+                  style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #105ec8;
+                    letter-spacing: 0;
+                  "
+                  ><span class="letterSpacing">btnGhost</span> 클래스추가</span
+                >
+              </p>
+            </div>
+            <!-- //설명 -->
+            <button class="btnSolid btnGhost">
+              <span class="letterSpacing">btnSolid</span>
+            </button>
+          </div>
+          <div style="margin: 5px 0">
+            <button class="btnSolidRound">
+              <span class="letterSpacing">btnSolidRound</span>
+            </button>
+          </div>
+          <div style="margin: 5px 0">
+            <button class="btnGhostRound">
+              <span class="letterSpacing">btnGhostRound</span>
+            </button>
+          </div>
+          <div style="margin: 5px 0">
+            <button class="btnOutlineRound">
+              <span class="letterSpacing">btnOutlineRound</span>
+            </button>
+          </div>
+          <div style="margin: 20px 0 10px">
+            <p>하단에 가로 100%로 꽉차는 버튼</p>
+            <p style="font-size: 12px; font-weight: 500; color: #105ec8">
+              하단에 붙는 버튼은 .btnFootBarWrap 으로 감싸주세요.
+            </p>
+          </div>
+          <div style="margin: 5px 0">
+            <button class="btnFooterColorBar" style="position: relative">
+              <span class="letterSpacing">btnFooterColorBar</span>
+            </button>
+          </div>
+          <div style="margin: 10px 0">
+            <p>모달 등에서의 하단 좌우 선택 버튼(텍스트형태)</p>
+          </div>
+          <div style="margin: 5px 0">
+            <button
+              class="btnFooterTxtBar"
+              style="position: relative; width: 50%"
+            >
+              <span class="letterSpacing">btnFooterTxtBar</span></button
+            ><button
+              class="btnFooterTxtBar"
+              style="position: relative; width: 50%"
+            >
+              <span class="letterSpacing">btnFooterTxtBar</span>
+            </button>
+          </div>
+          <div style="margin: 10px 0">
+            <p>모달 등에서의 하단 좌우 선택 버튼(컬러형태)</p>
+          </div>
+          <div style="margin: 5px 0">
+            <button
+              class="btnFooterYesNoBar"
+              style="position: relative; width: 50%"
+            >
+              <span class="letterSpacing">btnFooterTxtBar</span></button
+            ><button
+              class="btnFooterYesNoBar"
+              style="position: relative; width: 50%"
+            >
+              <span class="letterSpacing">btnFooterTxtBar</span>
+            </button>
+          </div>
+        </div>
+        <!-- //버튼형태 -->
+
+        <!-- 설명 -->
+        <div style="margin: 30px 0 10px">
+          <p style="font-size: 12px; font-weight: 500; color: #105ec8">
+            구분영역에 h3타이틀과 아래에 100%로 꽉찬 1px 회색보더가 들어가는
+            형태입니다.
+          </p>
+          <p style="font-size: 12px; font-weight: 500">
+            우측에 아이템이 들어가는 경우가 있어서 부모div에 클래스 넣었습니다.
+          </p>
+        </div>
+        <!-- //설명 -->
+
+        <!-- h3타이틀 border-bottom형태 -->
+        <!-- 영역구분할때 쓰이니 부모 section이나 div가 있을테고 -->
+        <section>
+          <div class="titleBottLine">
+            <h3>h3타이틀</h3>
+          </div>
+        </section>
+        <!-- //h3타이틀 border-bottom형태 -->
+        <!-- 설명 -->
+        <div style="margin: 30px 0 10px">
+          <p style="font-size: 12px; font-weight: 500">
+            우측에 셀렉트박스 들어가는 형태
+          </p>
+        </div>
+        <!-- //설명 -->
+        <!-- h3타이틀 border-bottom형태, 우측 셀렉트박스 -->
+        <section>
+          <div class="titleBottLine">
+            <h3>h3타이틀</h3>
+            <select class="selectCustom" name="sample">
+              <option>전체</option>
+              <option>선택</option>
+              <option>선택</option>
+            </select>
+          </div>
+        </section>
+        <!-- //h3타이틀 border-bottom형태, 우측 셀렉트박스 -->
+
+        <!-- 설명 -->
+        <div style="margin: 30px 0 10px">
+          <p><span style="letter-spacing: 0">shadowBox</span> 스타일</p>
+        </div>
+        <!-- //설명 -->
+        <!-- shadowBox -->
+        <div class="shadowBox">
+          <p>쉐도우박스 스타일</p>
+          <p style="font-size: 12px; font-weight: 500">
+            상하단 간격 등의 조금 다른 스타일은 개별페이지 css나 멀티클래스로
+            제어해주세요.
+          </p>
+        </div>
+        <!-- //shadowBox -->
+
+        <!-- 설명 -->
+        <div style="margin: 30px 0 10px">
+          <p>
+            <span style="letter-spacing: 0">100% background gradientBg</span>
+            스타일
+          </p>
+        </div>
+        <!-- //설명 -->
+        <!-- shadowBox -->
+        <div class="gradientBg">
+          <p style="padding: 20px 0 10px">그라디언트 백그라운드 스타일</p>
+          <p style="padding-bottom: 10px; font-size: 12px; font-weight: 500">
+            상하단 간격 등의 조금 다른 스타일은 개별페이지 css나 멀티클래스로
+            제어해주세요.
+          </p>
+        </div>
+        <!-- //shadowBox -->
+
+        <!-- 설명 -->
+        <div style="margin: 30px 0 10px">
+          <p>아래는 설정페이지 샘플입니다.</p>
+        </div>
+        <!-- //설명 -->
+
+        <!-- personalInfo -->
+        <div class="personalInfo">
+          <div class="titleArea flex">
+            <h4>개인정보</h4>
+            <span class="delAccount"><a href="#">회원탈퇴</a></span>
+          </div>
+          <ul class="personalInfoList">
+            <li>
+              <span>아이디</span>
+              <span class="letterSpacing">abc1234</span>
+            </li>
+            <li>
+              <span>비밀번호</span>
+              <span class="letterSpacing">********</span>
+              <span><a href="#" class="btnOutlineRound">변경하기</a></span>
+            </li>
+            <li>
+              <span>휴대전화</span>
+              <span class="letterSpacing">010-1234-5678</span>
+              <span><a href="#" class="btnOutlineRound">변경하기</a></span>
+            </li>
+            <li>
+              <span>이메일</span>
+              <span class="letterSpacing">abc1234@gmail.common</span>
+              <span><a href="#" class="btnOutlineRound">변경하기</a></span>
+            </li>
+            <li>
+              <span>주소</span>
+              <span>
+                <span class="postcode letterSpacing">00124</span>
+                <span class="address">
+                  서울특별시 구로구 서부샛길 822 (구로동) 1층 101호
+                </span>
+              </span>
+              <span><a href="#" class="btnOutlineRound">변경하기</a></span>
+            </li>
+          </ul>
+        </div>
+        <!-- //personalInfo -->
+
+        <!-- agreementSet -->
+        <div class="agreementSet">
+          <div class="titleArea flex">
+            <div>
+              <h4>수신동의 설정</h4>
+              <p class="desc">(개인정보 수집이용, 마케팅 활용동의 등)</p>
+            </div>
+            <div>
+              <span class="checkboxCustom switch" id="agreementSetSwitch">
+                <input type="checkbox" id="agreement" name="agreement" />
+                <label for="agreement"></label>
+              </span>
+            </div>
+          </div>
+          <ul class="agreementSetList">
+            <li>
+              <div class="checkTitle">
+                <div class="checkboxCustom">
+                  <input type="checkbox" id="agree1" name="agree1" />
+                  <label for="agree1"></label>
+                </div>
+                <label for="agree1">개인정보의 수집, 이용안내 (선택)</label>
+              </div>
+              <table class="tableList">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">약정거리</th>
+                    <th scope="col">수집항목</th>
+                    <th scope="col">이용목적</th>
+                    <th scope="col">보유기간</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>선택</td>
+                    <td>휴대폰번호, 이메일</td>
+                    <td>
+                      - 렌터카 관련 프로모션 안내<br />- 렌터카 관련 신제품 및
+                      신규서비스
+                    </td>
+                    <td>회원 탈퇴 또는 동의 철회시까지</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="bulDotList">
+                <li>
+                  고객님께서는 동의를 거부할 권리가 있으나, 미 동의 시
+                  상품/서비스 안내에 제한을 받을 수 있습니다.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="checkTitle">
+                <div class="checkboxCustom">
+                  <input type="checkbox" id="agree2" name="agree2" />
+                  <label for="agree2"></label>
+                </div>
+                <label for="agree2">마케팅 활용 동의 (선택)</label>
+              </div>
+              <table class="tableList">
+                <colgroup>
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                  <col width="25%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">약정거리</th>
+                    <th scope="col">수집항목</th>
+                    <th scope="col">이용목적</th>
+                    <th scope="col">보유기간</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>선택</td>
+                    <td>휴대폰번호, 이메일</td>
+                    <td>
+                      - 렌터카 관련 프로모션 안내<br />- 렌터카 관련 신제품 및
+                      신규서비스<br />- 기타 광고성 정보전송
+                    </td>
+                    <td>회원 탈퇴 또는 동의 철회시까지</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="bulDotList">
+                <li>
+                  고객님께서는 동의를 거부할 권리가 있으나, 미 동의 시
+                  상품/서비스 안내에 제한을 받을 수 있습니다.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="agreementSetListMarketing">
+                <li class="checkTitle">
+                  <div class="checkboxCustom">
+                    <input type="checkbox" id="agree3" name="agree3" />
+                    <label for="agree3"></label>
+                  </div>
+                  <label for="agree3">SMS 수신 동의 (선택)</label>
+                </li>
+                <li class="checkTitle">
+                  <div class="checkboxCustom">
+                    <input type="checkbox" id="agree4" name="agree4" />
+                    <label for="agree4"></label>
+                  </div>
+                  <label for="agree4">이메일 수신 동의 (선택)</label>
+                </li>
+                <li class="checkTitle">
+                  <div class="checkboxCustom">
+                    <input type="checkbox" id="agree5" name="agree5" />
+                    <label for="agree5"></label>
+                  </div>
+                  <label for="agree5">차량 GPS 이용 동의 (선택)</label>
+                </li>
+              </ul>
+              <ul class="bulDotList">
+                <li>
+                  고객님께서는 동의를 거부할 권리가 있으나, 미 동의 시
+                  상품/서비스 안내에 제한을 받을 수 있습니다.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- //agreementSet -->
+
+        <!-- impactSet -->
+        <div class="impactSet">
+          <div class="titleArea flex">
+            <div>
+              <h4>차량 충격 설정</h4>
+              <p class="desc">(차량의 내/외부에 의한 충격)</p>
+            </div>
+            <div>
+              <span class="checkboxCustom switch" id="impactSetSwitch">
+                <input type="checkbox" id="impact" name="impact" />
+                <label for="impact"></label>
+              </span>
+            </div>
+          </div>
+          <div class="impactRange">
+            <div class="impactRangeStep">
+              <div class="impactRangeDot"></div>
+              <span class="impactRangeTxt">약한충격</span>
+            </div>
+            <div class="impactRangeStep on">
+              <div class="impactRangeDot"></div>
+              <span class="impactRangeTxt">중간충격</span>
+            </div>
+            <div class="impactRangeStep">
+              <div class="impactRangeDot"></div>
+              <span class="impactRangeTxt">강한충격</span>
+            </div>
+          </div>
+        </div>
+        <!-- //impactSet -->
+      </section>
+      <!-- //infoBox -->
+
+      <!-- delAccountInfo -->
+      <section class="separate">
+        <div class="delAccountInfo">
+          <h5>회원 탈퇴 안내</h5>
+          <ul class="bulDotList">
+            <li>
+              회원 탈퇴 시 롯데 렌터카 모든 서비스에서 동시에 탈퇴가
+              이루어집니다.
+            </li>
+            <li>
+              기존 App 내 제공 혜택 및 정보 (단기 렌터카 이용 실적 및 적립
+              포인트 포함)가 사라지며 재가입 시 기존 이력이 복구되지 않습니다.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //delAccountInfo -->
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <footer></footer>
+    <!-- //footer -->
+  </body>
+</html>

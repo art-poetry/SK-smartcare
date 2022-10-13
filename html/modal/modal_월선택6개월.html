@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/modal.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- 임시 컨텐츠 -->
+    <div class="contents">
+      모달 alertType 타입<br />헤더가 없는 차량번호 페이지<br />modalWrap에
+      noHeader가 붙습니다.<br />Header영역은 삭제합니다.
+    </div>
+    <!-- //임시 컨텐츠 -->
+
+    <!-- modal -->
+    <div class="modal">
+      <!-- modalWrap -->
+      <div class="modalWrap modalAlertType noHeader">
+        <!-- modalHeader - 헤더가 없는 타입은 이 부분 삭제 -->
+        <!-- //modalHeader -->
+
+        <!-- modalBody -->
+        <div class="modalBody">
+          <ul class="monthPickList">
+            <!-- list unit -->
+            <li>
+              <label for="monthPick1">2021년 5월</label>
+              <div class="checkboxCustom">
+                <input type="checkbox" id="monthPick1" name="monthPick" />
+                <label for="monthPick1"></label>
+              </div>
+            </li>
+            <!-- //list unit -->
+            <!-- list unit -->
+            <li>
+              <label for="monthPick2">2021년 4월</label>
+              <div class="checkboxCustom">
+                <input type="checkbox" id="monthPick2" name="monthPick" />
+                <label for="monthPick2"></label>
+              </div>              
+            </li>
+            <!-- //list unit -->
+            <!-- list unit -->
+            <li>
+              <label for="monthPick3">2021년 3월</label>
+              <div class="checkboxCustom">
+                <input type="checkbox" id="monthPick3" name="monthPick" />
+                <label for="monthPick3"></label>
+              </div>
+            </li>
+            <!-- //list unit -->
+            <!-- list unit -->
+            <li>
+              <label for="monthPick4">2021년 2월</label>
+              <div class="checkboxCustom">
+                <input type="checkbox" id="monthPick4" name="monthPick" />
+                <label for="monthPick4"></label>
+              </div>
+            </li>
+            <!-- //list unit -->
+            <!-- list unit -->
+            <li>
+              <label for="monthPick5">2021년 1월</label>
+              <div class="checkboxCustom">
+                <input type="checkbox" id="monthPick5" name="monthPick" />
+                <label for="monthPick5"></label>
+              </div>
+            </li>
+            <!-- //list unit -->
+            <!-- list unit -->
+            <li>
+              <label for="monthPick6">2020년 12월</label>
+              <div class="checkboxCustom">
+                <input type="checkbox" id="monthPick6" name="monthPick" />
+                <label for="monthPick6"></label>
+              </div>
+            </li>
+            <!-- //list unit -->
+          </ul>
+        </div>
+        <!-- //modalBody -->
+
+        <!-- modalFooter -->
+        <div class="modalFixedWrap">
+          <div class="modalFooter">
+            <button type="button" class="btnFooterTxtBar">취소</button>
+            <button type="button" class="btnFooterTxtBar">확인</button>
+          </div>
+        </div>
+        <!-- //modalFooter -->
+      </div>
+      <!-- //modalWrap -->
+    </div>
+    <!-- //modal -->
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/payment/payment.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <a href="#" class="btnBack"><span class="hidden">back</span></a>
+          <h2>납부관리</h2>
+        </div>
+        <div class="headerTools">
+          <a href="#" class="btnAlarm"><span class="hidden">alarm</span></a>
+          <button href="#" class="btnMenuOpen">
+            <span class="hidden">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+      <!-- nav -->
+      <nav class="navbar" style="display: none">
+        <ul>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </header>
+    <!-- //header -->
+    <!-- contents / setting -->
+    <div class="contents bgGray">
+        <section class="separate type2">
+          <div class="roundBox">
+            <div class="linkWithArrow">
+              <a href="#">
+                <span class="title"><span class="letterSpacing">39</span>하<span class="carNum">9155</span></span>
+                <span class="carModel">쉐보레 2019 THE NEW 스파크</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="separate type2">
+          <div class="paymentList">
+            <h3>청구 금액</h3>
+            <div class="roundBox">
+              <div class="selectMonth">
+                <a class="month" href="#none"><span>3월</span></a>
+                <span class="date">21.02.01 ~ 21.02.28</span>                
+              </div>
+              <ul class="tableFormType">
+                <li>
+                  <div class="property">총 이용금액</div>
+                  <div class="value"><strong>1,039,200원</strong></div>
+                </li>
+                <li>
+                  <div class="property">현재 미납금액</div>
+                  <div class="value"><strong>643,000원</strong></div>
+                </li>
+                <li>
+                  <div class="property">청구액</div>
+                  <div class="value"><strong>무제한</strong></div>
+                </li>
+                <li>
+                  <div class="property">청구액</div>
+                  <div class="value"><strong>643,000원</strong></div>
+                </li>
+              </ul>
+              <div class="detail">
+                <h4>상세 이용금액</h4>
+                <ul class="tableFormType">
+                  <li>
+                    <div class="property">월 렌탈료 (A)</div>
+                    <div class="value">1,039,200원</div>
+                  </li>
+                  <li>
+                    <div class="property">미납금액 (b)</div>
+                    <div class="value">0원</div>
+                  </li>
+                  <li>
+                    <div class="property">기타금액 (C)</div>
+                    <div class="value">56,000원</div>
+                  </li>
+                  <li>
+                    <div class="property">선수금 당월 차감액 (D)</div>
+                    <div class="value">643,000원</div>
+                  </li>
+                  <li>
+                    <div class="property">잔여 선수금</div>
+                    <div class="value">643,000원</div>
+                  </li>
+                  <li>
+                    <div class="property">Slim 당월 차감액 (E)</div>
+                    <div class="value">643,000원</div>
+                  </li>
+                  <li>
+                    <div class="property">Slim 누적 차감액</div>
+                    <div class="value">643,000원</div>
+                  </li>
+                  <li>
+                    <div class="property">Slim 당월 정산액 </div>
+                    <div class="value"><strong>0원</strong></div>
+                  </li>
+                </ul>
+              </div>
+              <ul class="tableFormType">
+                <li>
+                  <div class="property">총 이용금액 <span class="total">(A+B+C)-(D+E)</span></div>
+                  <div class="value"><strong>1,039,200원</strong></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="paymentInfo">
+            <h3>납부 정보</h3>
+            <div class="roundBox">
+              <ul class="viewList">
+                <li>
+                  <div class="property">예금주</div>
+                  <div class="value"><strong>홍길동</strong></div>
+                </li>
+                <li>
+                  <div class="property">계좌 번호</div>
+                  <div class="value"><strong>1234-5678-***-***</strong></div>
+                </li>
+                <li>
+                  <div class="property">납부 방법</div>
+                  <div class="value">가상계좌/하나</div>
+                </li>
+                <li>
+                  <div class="property">납부일</div>
+                  <div class="value">매월 20일</div>
+                </li>
+              </ul>
+            </div>
+            <button class="btnSolid">
+              <span class="letterSpacing">납부정보 변경 </span>
+            </button>
+          </div>
+        </section>
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <footer></footer>
+    <!-- //footer -->
+  </body>
+</html>

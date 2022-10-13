@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* footerFloat */
+.footerFloat {
+  /* display: none; */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10
+}
+.footerFloatMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+  border-top: var(--line);
+  background-color: #fff;
+}
+.footerFloatMenu li {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 8px;
+  text-align: center;
+}
+.footerFloatMenu li.home {
+  background-image: url("../img/common/footer_floating_home.svg");
+  background-size: 21px auto;
+}
+.footerFloatMenu li.contract {
+  background-image: url("../img/common/footer_floating_contract.svg");
+  background-position-y: 9px;
+  background-size: 25px auto;
+}
+.footerFloatMenu li.repair {
+  background-image: url("../img/common/footer_floating_repair.svg");
+  background-size: 23px auto;
+}
+.footerFloatMenu li.emergency {
+  background-image: url("../img/common/footer_floating_emergency.svg");
+  background-size: 29px auto;
+}
+.footerFloatMenu li.home.on {
+  background-image: url("../img/common/footer_floating_home_on.svg");
+}
+.footerFloatMenu li.contract.on {
+  background-image: url("../img/common/footer_floating_contract_on.svg");
+}
+.footerFloatMenu li.repair.on {
+  background-image: url("../img/common/footer_floating_repair_on.svg");
+}
+.footerFloatMenu li.emergency.on {
+  background-image: url("../img/common/footer_floating_emergency_on.svg");
+}
+.footerFloatMenu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 33px;
+  font-size: 10px;
+}
+.footerFloatMenu li.on a,
+.footerFloatMenu li a:focus {
+  color: #222;
+}
+
+/* footerFloatBtn */
+.footerFloatBtn {
+  /* display: none; */
+  position: fixed;
+  right: 20px;
+  bottom: 87px;
+  z-index: 1;
+}
+.footerFloatBtn li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-top: 9px;
+  border-radius: 50%;
+}
+.footerFloatBtn li .pageTop {
+  border: var(--line);
+  background: #fff url("../img/common/footer_floating_arrowTop.svg") no-repeat
+    center / 10px auto;
+  box-shadow: 0 0 10px 3px rgb(0 0 0 / 20%);
+}
+.footerFloatBtn li .pageTop.show {
+  display: block;
+  -webkit-animation: fade-in 0.5s forwards;
+  animation: fade-in 0.5s forwards;
+}
+.footerFloatBtn li .liveChat {
+  background: var(--mainColor) url("../img/common/footer_floating_chat.svg")
+    no-repeat center / 17px auto;
+}

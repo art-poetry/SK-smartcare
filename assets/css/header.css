@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  /* Status bar height on iOS 11.0 */
+  padding-top: constant(safe-area-inset-top);
+  /* Status bar height on iOS 11+ */
+  padding-top: env(safe-area-inset-top);
+  z-index: 100;
+}
+.header .headerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 13px;
+  border-bottom: var(--line);
+}
+.header.noBorder .headerWrap {
+  border-bottom-color: #fff;
+}
+.header.onBorder .headerWrap {
+  border-bottom-color: var(--lineGray);
+}
+.header .headerTitle h2 {
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header .headerTitle h2:only-child {
+  padding-left: 7px;
+}
+.header .headerTitle,
+.header .headerTools {
+  display: flex;
+  align-items: center;
+}
+.header a,
+.header button {
+  width: 35px;
+  height: 35px;
+  background-size: 22px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .btnBack {
+  background-image: url("../img/common/ico_back.svg");
+}
+.header .btnAlarm {
+  position: relative;
+  background-image: url("../img/common/ico_alarm.svg");
+}
+.header .btnAlarm.new::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/common/ico_new.svg") no-repeat 0 0 / 10px auto;
+}
+.header .btnMenuOpen {
+  background-image: url("../img/common/ico_menu.svg");
+  background-size: 23px auto;
+}
+.header .btnClose {
+  background-image: url("../img/common/ico_close.svg");
+}
+.header .logo {
+  width: 70px;
+  background-image: url("../img/common/logo.svg");
+  background-size: 60px auto;
+  background-position-x: 10px;
+  background-position-y: 1px;
+}
+
+/* header - main */
+.header.main {
+  background: transparent;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+}
+.header.main .headerWrap {
+  border-bottom-color: transparent; 
+}
+.header.main .logo {
+  background-image: url("../img/common/logo_white.svg");
+}
+.header.main .btnAlarm {
+  background-image: url("../img/common/ico_alarm_white.svg");
+}
+.header.main .btnMenuOpen {
+  background-image: url("../img/common/ico_menu_white.svg");
+}

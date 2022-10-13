@@ -1,0 +1,287 @@
+@charset "utf-8";
+.contents.bgGray {
+  background-color: var(--bgGray);
+}
+.roundBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 1;
+}
+.separate.type2 {
+  padding: 15px 0;
+}
+.separate.type2 + .separate.type2::before {
+  border-top: 10px  solid #fff;
+}
+/* 월선택 */
+.selectMonth .month {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+.selectMonth .month span {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;  
+}
+.selectMonth .date {
+  display: block;
+  margin-top: 13px;
+  font-size: 13px;
+}
+.selectMonth .month span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: url(../../img/common/arrow_accordion_dark.svg) no-repeat 0 0 / 10px auto;
+  margin-top: -3px;
+}
+/* 청구금액 목록 */
+.paymentList .roundBox {
+  padding-bottom: 30px;
+}
+.paymentList h3 {
+  padding: 20px 0 15px;
+}
+.paymentList .selectMonth {
+  margin-bottom: 20px;
+}
+.paymentList .tableFormType .property {
+  font-weight: 500;
+}
+.paymentList .tableFormType .value {
+  color: var(--subTxtColor);
+}
+.paymentList .detail {
+  border: var(--line);
+  border-width: 1px 0;
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.paymentList .detail h4 {
+  color: var(--subTxtColor);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.paymentList .tableFormType .total {
+  font-size: 13px;
+  letter-spacing: -1px;
+}
+
+.paymentInfo h3 {
+  padding: 15px 0;
+}
+.paymentInfo .viewList .property {
+  font-weight: 500;
+}
+.paymentInfo .btnSolid {
+  margin: 30px 0;
+}
+.paymentInfo .viewList.type2 .rowLine span {
+  display: block;
+}
+.paymentInfo .roundBox + h4 {
+  margin-top: 20px;
+}
+
+/* 납부방법 변경 */
+.paymentEdit {
+  padding-top: 30px;
+}
+.paymentEdit .hiddenBox {
+  display: none;
+  background-color: var(--bgGray);
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+.paymentEdit .radioItem.on + .hiddenBox {
+  display: block;
+}
+.paymentEdit .viewList .property,
+.paymentEdit .viewList .value {
+  font-weight: 500;
+  color: #222;
+  align-self: center;
+}
+.paymentEdit h4 {
+  margin-top: 30px;
+}
+.paymentEdit h4 strong {
+  color: var(--mainColor);
+}
+.paymentEdit .selectCustom {
+  background-color: #fff;
+}
+.paymentEdit .viewList .rowLine {
+  display: block;
+}
+.paymentEdit .viewList .rowLine .value {
+  margin-top: 10px;
+}
+.paymentEdit .viewList .rowLine .inputLine {
+  background-color: transparent;
+}
+.paymentEdit .viewList .btnOutlineRound {
+  background-color: #fff;
+}
+
+/* 과태료발생내역 */
+.paymentPenalty {
+  padding: 30px 0;
+}
+.paymentPenalty .roundBox {
+  border: 1px solid #c7c7c7;
+}
+.monthSummary {
+  position: relative;
+}
+.monthSummary::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  right: -20px;
+  display: block;
+  width: calc(100% + 40px);
+  border-bottom: 1px solid #eee
+}
+.monthSummary .selectMonth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.monthSummary .selectMonth .total {
+  font-weight: 500;
+}
+.monthSummary .selectMonth .total strong {
+  color: var(--mainColor);
+}
+.penaltyList {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.penaltyList .date {
+  font-size: 11px;
+  font-weight: 500;
+  color: #222;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #222;
+}
+.penaltyList .dateDetail {
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  color: #757575;
+  background-color: #f7f7f7;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.penaltyList .dateDetail::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  width: 5px;
+  height: 5px;
+  background-color: #222;
+  border-radius: 50%;
+}
+.penaltyList .tableFormType {
+  margin: 10px 15px 0;
+  border-left: 1px solid #eee;
+}
+.penaltyList .tableFormType .property {
+  min-width: 100px;
+  padding-left: 15px;
+  align-self: flex-start;
+}
+.penaltyList .tableFormType .value {
+  padding-right: 15px;
+  text-align: right;
+}
+.btn_more {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+.btn_more span {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  padding-right: 20px;
+}
+.btn_more span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: url(../../img/common/arrow_accordion_default.svg) no-repeat 0 0 / 10px auto;
+  margin-top: -3px;
+}
+.btn_more.on span::before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-top: -5px;
+}
+.paymentArticle {
+  padding: 30px 0;
+}
+.paymentArticle .tit {
+  font-size: 18px;
+  font-weight: 500;
+}
+  
+/* 리스트 */
+.viewList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 0;
+}
+.viewList .property {
+  flex-shrink: 0;
+  width: 95px;
+}
+.viewList li .value {
+  flex-grow: 1;
+  color: var(--subTxtColor);
+  align-self: center;
+}
+.viewList li .value strong {
+  color: var(--mainColor);
+  font-weight: 500;
+}
+.viewList.type2 .property {
+  width: 165px;
+}
+.viewList.type2 .rowLine {
+  align-self: flex-start;
+}
+
+.radioList {
+  border-top: 2px solid #222;
+  margin-top: 15px;
+}
+.radioList .radioItem {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.radioList .radioItem label {
+  font-weight: 500;
+}
+

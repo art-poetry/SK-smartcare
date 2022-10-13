@@ -1,0 +1,1578 @@
+@charset "utf-8";
+
+/* common */
+:root {
+  --mainColor: #ff4b13;
+  --mainGradient: linear-gradient(#fa8748, #fb592b);
+  --bgGray: #f7f7f7;
+  --lineGray: #eee;
+  --line: 1px solid #eee;
+  --thickBorder: 10px solid #f7f7f7;
+  --innerPadding: 0 20px;
+  --subTxtColor: #757575;
+  --boxShadow: 0 5px 10px 2px rgb(0, 0, 0, 0.13);
+  --modalBoxShadow: 0 5px 20px 5px rgba(0, 0, 0, 0.12);
+}
+.clear {
+  zoom: 1;
+}
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.pullLeft {
+  float: left;
+}
+.pullRight {
+  float: right;
+}
+.posFixed {
+  position: fixed;
+}
+
+/* button */
+.btnSolid,
+.btnSolidRound,
+.btnGhost,
+.btnGhostRound,
+.btnOutlineRound,
+.btnFooterColorBar,
+.btnFooterTxtBar,
+.btnFooterYesNoBar {
+  display: inline-block;
+  width: auto;
+}
+.btnSolid,
+.btnGhost,
+.btnFooterColorBar,
+.btnFooterTxtBar,
+.btnFooterYesNoBar {
+  width: 100%;
+}
+.btnSolid {
+  height: 50px;
+  background-color: var(--mainColor);
+  border-radius: 7px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btnSolidRound {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 14px;
+  border-radius: 15px;
+  background-color: var(--mainColor);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+.btnGhost {
+  border: 1px solid var(--mainColor);
+  background-color: #fff;
+  color: var(--mainColor);
+}
+.btnGhostRound {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 14px;
+  border: 1px solid var(--mainColor);
+  border-radius: 15px;
+  color: var(--mainColor);
+  font-size: 13px;
+  font-weight: 500;
+}
+.btnOutlineRound {
+  height: 26px;
+  padding: 2px 14px;
+  border: 1px solid #ddd;
+  border-radius: 13px;
+  color: #222;
+  font-size: 13px;
+}
+.btnOutlineRound.disabled {
+  color: #ccc;
+}
+.rRect {
+  border-radius: 3px;
+}
+.btnMedium {
+  height: 45px;
+  line-height: 43px;
+}
+.btnFootBarWrap {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+}
+.btnFooterColorBar,
+.btnFooterTxtBar,
+.btnFooterYesNoBar {
+  height: 58px;
+  font-weight: 500;
+  line-height: 58px;
+  text-align: center;
+}
+.btnFooterColorBar {
+  background: var(--mainColor);
+  color: #fff;
+}
+.btnFooterTxtBar {
+  color: var(--subTxtColor);
+}
+.btnFooterTxtBar + .btnFooterTxtBar {
+  color: var(--mainColor);
+}
+.btnFooterYesNoBar {
+  background-color: var(--bgGray);
+}
+.btnFooterYesNoBar + .btnFooterYesNoBar {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+/* text */
+h2,
+h3 {
+  font-weight: 700;
+}
+h4 {
+  font-weight: 500;
+}
+h2 {
+  font-size: 21px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 15px;
+}
+h5 {
+  font-size: 13px;
+}
+.letterSpacing {
+  letter-spacing: 0;
+}
+.txtEmphasis {
+  color: var(--mainColor);
+}
+/* pointCheck decoration */
+.pointCheck,
+.icoNew {
+  position: relative;
+}
+.pointCheck::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/common/img_point_check.svg") no-repeat 0 0 / 33px auto;
+  z-index: -1;
+}
+.icoNew::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/common/ico_new.svg") no-repeat 0 0 / 17px auto;
+}
+
+/* contents */
+body.main {
+  background-color: #fa8748;
+}
+.contents {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 50px 20px 0;
+  /* Status bar height on iOS 11.0 */
+  padding-top: calc(constant(safe-area-inset-top) + 50px);
+  /* Status bar height on iOS 11+ */
+  padding-top: calc(env(safe-area-inset-top) + 50px);
+  background-color: #fff;
+}
+.contents.noHeader,
+.contents.main {
+  padding-top: 0 !important;
+  /* Status bar height on iOS 11.0 */
+  padding-top: calc(constant(safe-area-inset-top) - 20px) !important;
+  /* Status bar height on iOS 11+ */
+  padding-top: calc(env(safe-area-inset-top) - 20px) !important;
+}
+.contents.main {
+  background-color: var(--bgGray);
+}
+.contents.fullWidth {
+  position: static;
+  left: -20px;
+  right: -20px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.contents.withFooterBtn {
+  padding-bottom: 80px;
+}
+
+/* layout component */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner {
+  padding: var(--innerPadding);
+}
+/* 10px border divided */
+.separate {
+  position: relative;
+}
+.separate + .separate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  display: block;
+  width: calc(100% + 40px);
+  border-top: var(--thickBorder);
+}
+/* 1px border h3 */
+.titleBottLine {
+  position: relative;
+  min-height: 60px;
+  margin: 0 -20px;
+  padding: 15px 20px;
+  border-bottom: var(--line);
+}
+.titleBottLine .selectCustom {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+}
+
+/* gradientBg */
+.gradientBg {
+  position: relative;
+  left: -20px;
+  right: -20px;
+  width: calc(100% + 40px);
+  height: auto;
+  padding: 0 20px;
+  background: var(--mainGradient);
+}
+
+/* shadowBox */
+.shadowBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: var(--boxShadow);
+  z-index: 1;
+}
+/* 차량 사진 */
+/* position 값은 각 페이지 css에서 */
+.carModelPhoto {
+  position: absolute;
+}
+.carModelPhoto img {
+  width: 140px;
+  height: auto;
+}
+/* linkWithArrow 셀렉트박스처럼 생긴 버튼 */
+.linkWithArrow {
+  position: relative;
+}
+.linkWithArrow::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: url("../img/common/arrow_accordion_dark.svg") no-repeat 0 0 / 10px
+    auto;
+  margin-top: -3px;
+}
+.linkWithArrow a {
+  display: block;
+  padding-right: 20px;
+}
+.linkWithArrow .title,
+.linkWithArrow .carModel {
+  display: block;
+}
+.linkWithArrow .title {
+  color: #222;
+  font-size: 18px;
+  font-weight: 700;
+}
+.linkWithArrow .title .carNum {
+  padding-left: 8px;
+  letter-spacing: 0;
+}
+.linkWithArrow .carModel {
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* tableFormType 테이블폼 형태의 list */
+/* property와 value로 구분 */
+.tableFormType li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.tableFormType li:last-child {
+  padding-bottom: 0;
+}
+.tableFormType li .property {
+  font-weight: 300;
+}
+.tableFormType li .desc {
+  display: block;
+  padding-top: 5px;
+  color: var(--subTxtColor);
+  font-size: 13px;
+}
+.tableFormType li .value {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.tableFormType li .alignSelfTop {
+  align-self: flex-start;
+}
+.tableFormType li strong {
+  color: var(--mainColor);
+}
+/* 가로배열 타입 */
+.tableFormType.horizonType {
+  display: flex;
+}
+.tableFormType.horizonType li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* setting - myPage - 계정정보부분 */
+.contents .summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 86px;
+}
+.contents .summary .account .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.contents .summary .account .id {
+  color: var(--subTxtColor);
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+.titleArea {
+  padding: 30px 0 20px;
+  border-bottom: var(--line);
+}
+.titleArea .desc {
+  color: var(--subTxtColor);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* tab */
+/* tabBottLine */
+.tabTopLine,
+.tabBottLine,
+.btnsTab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 0 -20px 10px;
+}
+.tabBottLine,
+.btnsTab {
+  margin-left: 0;
+  margin-right: 0;
+}
+.tabBottLine {
+  margin-bottom: 20px;
+}
+.tabBottLine::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  bottom: 0;
+  display: block;
+  width: calc(100% + 40px);
+  border-bottom: var(--line);
+  z-index: 1;
+}
+.tabTopLine li,
+.tabBottLine li,
+.btnsTab li {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.tabTopLine li a,
+.tabBottLine li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 13px;
+  background-color: var(--bgGray);
+  font-weight: 300;
+  overflow: hidden;
+}
+.tabBottLine li a {
+  background-color: #fff;
+}
+.tabTopLine li a.on,
+.tabBottLine li a.on,
+.btnsTab li a.on {
+  background-color: #fff;
+  color: var(--mainColor);
+  font-weight: 500;
+}
+.tabTopLine li a.on::before,
+.tabBottLine li a.on::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--mainColor);
+  z-index: 2;
+}
+.tabBottLine li a.on::before {
+  top: unset;
+  bottom: 0;
+}
+
+/* 버튼형태 탭 */
+.btnsTab {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  margin: 20px 0;
+}
+.btnsTab li + li {
+  padding-left: 7px;
+}
+.btnsTab li a {
+  display: block;
+  height: 44px;
+  padding-top: 11px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: var(--bgGray);
+  color: #222;
+  font-size: 13px;
+  font-weight: 300;
+}
+.btnsTab li a.on {
+  border-color: var(--mainColor);
+}
+
+/* 불릿 리스트 (dot style) */
+.bulDotList li,
+.numList li,
+.referenceMark li {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.numList li {
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 25px;
+}
+.bulDotList li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: block;
+  width: 2px;
+  height: 2px;
+  background-color: #222;
+  border-radius: 50%;
+}
+.bulDotList li strong {
+  color: var(--mainColor);
+  font-weight: 500;
+}
+/* 숫자 리스트 스타일 */
+.numList li .numBullet {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  background-color: #222;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+.referenceMark li {
+  padding-left: 17px;
+  color: var(--subTxtColor);
+}
+.referenceMark li::before {
+  content: "※";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+/* orderStep */
+.orderStepList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.orderStepList li {
+  flex-basis: 33.333%;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  padding-top: 40px;
+  color: var(--subTxtColor);
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+}
+.orderStepList li::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 45px;
+  width: 10px;
+  height: 10px;
+  background: url("../img/common/arrow_accordion_default.svg") no-repeat 0 0 /
+    10px auto;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.orderStepList li:first-child:after,
+.orderStepList li:nth-child(3n + 1):after {
+  content: none;
+}
+.orderStepList li:first-child,
+.orderStepList li:nth-child(2),
+.orderStepList li:nth-child(3) {
+  margin-top: 0;
+}
+.orderStepList li .date {
+  display: block;
+  padding-top: 2px;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.orderStepList li::before {
+  content: "01";
+  position: absolute;
+  left: calc(50% - 16px);
+  top: 0;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  border-radius: 50%;
+  border: 1px solid var(--mainColor);
+  background-color: #fff;
+  color: var(--mainColor);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.orderStepList li:nth-child(2)::before {
+  content: "02";
+}
+.orderStepList li:nth-child(3)::before {
+  content: "03";
+}
+.orderStepList li:nth-child(4)::before {
+  content: "04";
+}
+.orderStepList li:nth-child(5)::before {
+  content: "05";
+}
+.orderStepList li:nth-child(6)::before {
+  content: "06";
+}
+.orderStepList li:nth-child(7)::before {
+  content: "07";
+}
+.orderStepList li:nth-child(8)::before {
+  content: "08";
+}
+.orderStepList li:nth-child(9)::before {
+  content: "09";
+}
+.orderStepList li:nth-child(10)::before {
+  content: "10";
+}
+.orderStepList li.on {
+  color: #222;
+  font-weight: 500;
+}
+.orderStepList li.on::before {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+/* table */
+.tableList {
+  position: relative;
+}
+.tableList::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #222;
+}
+.tableList th,
+.tableList td {
+  border-right: var(--line);
+  border-bottom: var(--line);
+  text-align: center;
+}
+.tableList th {
+  padding: 10px 0;
+  background-color: var(--bgGray);
+  font-size: 13px;
+  font-weight: 500;
+}
+.tableList th:last-child,
+.tableList td:last-child {
+  border-right: 0 none;
+}
+.agreementSetList .tableList td {
+  padding: 10px 5px;
+  color: var(--subTxtColor);
+  font-size: 11px;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+/* accordion - 기본이 setting myPage */
+.separate > .accordion {
+  padding-top: 10px;
+}
+.accordion .accordionItem .accordionHeader {
+  position: relative;
+  width: 100%;
+  padding: 20px 50px 20px 0;
+  border-bottom: 1px solid transparent;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+}
+.accordion .accordionItem .accordionHeader.on {
+  border-bottom: var(--line);
+}
+.accordion .accordionItem .accordionHeader::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -3px;
+  background: url("../img/common/arrow_accordion_dark.svg") no-repeat 0 0 / 10px
+    auto;
+}
+.accordion .accordionItem .accordionHeader.on:before {
+  margin-top: -6px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.accordion .accordionItem .accordionHeader .titleArea .icoNew {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/common/ico_new.svg") no-repeat center / 17px auto;
+  margin-left: 5px;
+}
+.accordion .accordionItem .accordionHeader .titleArea .date {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #757575;
+  margin-top: 5px;
+}
+.accordion .accordionItem .accordionBody {
+  display: none;
+  margin-top: 10px;
+}
+.accordion .accordionItem .accordionBody a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #222;
+  font-weight: 700;
+}
+.accordion .accordionItem .accordionBody img {
+  max-width: 100%;
+}
+
+
+
+/* 인증번호입력 */
+.timeCount {
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  color: #ff0000;
+  letter-spacing: 0;
+}
+.timeExtBox {
+  float: right;
+  padding-top: 5px;
+}
+.timeExtLink {
+  color: #222;
+  font-size: 13px;
+  text-decoration: underline;
+}
+.elps {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.elps2 {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.elps3 {
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.ios_slide_vert {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ios_slide_horz {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* input Type */
+input[type="number"],
+input.onlyNumEn {
+  letter-spacing: 0;
+}
+input[type="number"]::placeholder,
+input.onlyNumEn::placeholder {
+  letter-spacing: -0.05rem;
+}
+input::placeholder {
+  color: var(--subTxtColor);
+}
+/* input error */
+input.error {
+  border-color: #e12a00;
+}
+input.error::placeholder {
+  color: #e12a00;
+}
+/* input style */
+.inputLine {
+  width: 100%;
+  height: 50px;
+  font-weight: 300;
+  border-bottom: var(--line);
+  background: #fff;
+}
+.inputLine:disabled {
+  background: #c7c7c7;
+}
+.inputLineFake {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--line);
+}
+.inputRoundRect {
+  width: 100%;
+  height: 45px;
+  margin: 6px 0;
+  padding: 0 12px;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px;
+  background: #fff;
+  font-weight: 300;
+}
+.inputRoundRect.oneNum {
+  width: 44px;
+  border-radius: 7px;
+  font-size: 21px;
+  font-weight: 500;
+  text-align: center;
+}
+.inputSearch {
+  margin: 30px 0 20px;
+  width: 100%;
+  height: 50px;
+  padding: 0 50px 0 20px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: var(--bgGray) url(../img/common/ico_search.svg) no-repeat
+    calc(100% - 13px) center / 22px auto;
+}
+.inputSearch:focus {
+  border: var(--line);
+  background-color: #fff;
+}
+
+/* inputLine 스타일 우측에 버튼 있는 경우 */
+/* inputBtnSet으로 감싸줌 */
+.inputBtnSet {
+  position: relative;
+}
+.inputBtnSet a {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.inputBtnSet .inputLine {
+  padding-right: 70px; /* TBD 추후수정예정 */
+}
+
+/* inputRoundRect 스타일 우측에 버튼있는 경우 */
+.inputWithBtn .inputRoundRect {
+  margin: 0;
+}
+/* 우측에 버튼있는 경우 */
+.inputWithBtn input {
+  width: calc(100% - 80px);
+}
+.inputWithBtn a {
+  float: right;
+}
+/* email입력 기본 골뱅이 영역 */
+.emailInputBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.emailInputBox .atMark {
+  align-self: stretch;
+  padding: 15px 5px 0;
+  border-bottom: var(--line);
+  font-size: 18px;
+}
+.emailInputBox input:first-child {
+  flex-basis: 56%;
+}
+.emailInputBox input:last-child {
+  flex-basis: 44%;
+}
+/* textarea */
+textarea {
+  resize: none;
+  -webkit-appearance: none;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #757575;
+}
+
+textarea::-moz-placeholder {
+  color: #757575;
+}
+
+textarea:-ms-input-placeholder {
+  color: #757575;
+}
+
+textarea:-moz-placeholder {
+  color: #757575;
+}
+
+.inputAreaVertical {
+  margin: 40px 0;
+}
+.inputAreaVertical .inputArea label {
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.inputAreaVertical .inputArea li {
+  margin-bottom: 20px;
+}
+.essential {
+  position: relative;
+}
+.essential::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -7px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ff4b13;
+}
+
+/* checkbox */
+/* checkboxCustom - radioCustom */
+.checkboxCustom,
+.radioCustom {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.checkboxCustom label,
+.radioCustom label {
+  display: inline-block;
+  background-image: none;
+  background-repeat: no-repeat;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkboxCustom input[type="checkbox"],
+.radioCustom input[type="radio"] {
+  position: absolute;
+  z-index: -1000;
+  left: -1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.checkboxCustom input[type="checkbox"] + label,
+.radioCustom input[type="radio"] + label {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--lineGray);
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+.checkboxCustom input[type="checkbox"]:checked + label,
+.radioCustom input[type="radio"]:checked + label {
+  border-color: var(--mainColor);
+  background: var(--mainColor) url(../img/common/ico_check.svg) no-repeat 0 0;
+  background-size: 100% auto;
+}
+/* checkboxCustom - switch */
+.checkboxCustom.switch {
+  height: 24px;
+  padding-right: 0;
+}
+.checkboxCustom.switch input[type="checkbox"] + label {
+  position: relative;
+  width: 48px;
+  height: 100%;
+  text-indent: -9999px;
+  background: #eee;
+  border: 0 none;
+  border-radius: 24px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.checkboxCustom.switch input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.checkboxCustom.switch input[type="checkbox"]:checked + label {
+  background: #ff4b13;
+}
+.checkboxCustom.switch input[type="checkbox"]:checked + label::before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+.checkboxCustom.type1 input[type="checkbox"] + label {
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  background-image: url("/web/assets/img/common/check_bg1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+
+.checkboxCustom.type1 input[type="checkbox"]:checked + label {
+  background-position: 0 -20px;
+}
+
+.checkboxCustom.type2 input[type="checkbox"] + label {
+  width: auto;
+  height: auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.5;
+  padding-left: 30px;
+  position: relative;
+}
+
+.checkboxCustom.type2 input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/web/assets/img/common/check_bg1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.checkboxCustom.type2 input[type="checkbox"]:checked + label:before {
+  background-position: 0 -20px;
+}
+.radioDesign.type2 input[type="checkbox"] + label {
+  width: auto;
+  height: auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #222;
+  padding-left: 30px;
+  position: relative;
+}
+
+.radioDesign.type2 input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/web/assets/img/common/radio_bg1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.radioDesign.type2 input[type="checkbox"]:checked + label:before {
+  background-position: 0 -20px;
+}
+
+.radioDesign.type2:last-child input[type="checkbox"] + label {
+  margin-right: 0;
+}
+
+/* selectbox */
+select {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.selectCustom {
+  padding-right: 20px;
+  background: url("../img/common/arrow_accordion_default.svg") no-repeat right
+    3px / 10px auto;
+  color: var(--subTxtColor);
+  font-size: 13px;
+  font-weight: 300;
+}
+.selectCustom.type2 {
+  width: 100%;
+  height: 38px;
+  padding-left: 10px;
+  font-size: 15px;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px;
+  background-position: 95% 15px;
+}
+.selectCustomBtn {
+  width: 100%;
+  height: 50px;
+  padding-right: 20px;
+  border-bottom: 1px solid #eee;
+  background: url("../img/common/arrow_accordion_default.svg") no-repeat right
+    center / 10px auto;
+  font-size: 15px;
+}
+
+/* 차량등록부분 */
+.pageDesc {
+  margin-top: 30px;
+  font-weight: 300;
+}
+.obfuscationArea {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 140px);
+  padding: 8px 10px 0 0;
+}
+.obfuscation {
+  color: var(--subTxtColor);
+  font-size: 25px;
+  text-align: justify;
+  text-justify: inter-character;
+}
+.howToCheck {
+  margin: 0 -20px;
+  padding: 40px 20px;
+  background-color: var(--bgGray);
+}
+.howToCheck li img {
+  width: calc(100% + 10px);
+  max-width: none;
+  height: auto;
+  margin: 30px -10px 0 -10px;
+}
+
+/* bannerArea - 닷컴배너 연동되는 부분 */
+.bannerArea {
+  min-height: 265px;
+  margin: 0 -20px;
+  padding: 20px;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  background-color: #fff;
+}
+.indicators {
+  height: 40px;
+  margin: 0 -20px;
+  padding: 0 20px;
+  background-color: var(--bgGray);
+}
+
+/* footer - sign, main 하단 */
+/* 고객센터 */
+.customerArea,
+.termsArea,
+.authArea,
+.authenticArea {
+  margin: 0 -20px;
+  padding: 0 20px;
+  background-color: var(--bgGray);
+}
+.customerArea {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.customerArea h5 {
+  margin-bottom: 6px;
+}
+.customerNum {
+  margin-left: -2px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.customerDesc {
+  margin-top: 6px;
+  color: var(--subTxtColor);
+  font-size: 13px;
+}
+
+/* sns */
+.snsLink {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 40%;
+}
+@media (min-width: 321px) {
+  .snsLink {
+    width: 50%;
+  }
+}
+.snsLink li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 3px 0 0 3px;
+  border-radius: 50%;
+  background: #3c5897 url("../img/common/ico_sns_facebook.svg") no-repeat center /
+    8px auto;
+}
+.snsLink li:first-child {
+  margin-left: 0;
+}
+.snsLink li.insta {
+  background: #ed596d url("../img/common/ico_sns_insta.svg") no-repeat center /
+    16px auto;
+}
+.snsLink li.youtube {
+  background: #fe0015 url("../img/common/ico_sns_youtube.svg") no-repeat center /
+    15px auto;
+}
+.snsLink li.blog {
+  background: #00c73c url("../img/common/ico_sns_blog.svg") no-repeat
+    calc(50% + 1px) center / 12px auto;
+}
+.snsLink li.post {
+  background: #00c73c url("../img/common/ico_sns_post.svg") no-repeat center /
+    28px auto;
+  clip-path: circle(50% at 50% 50%);
+}
+.snsLink li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* termsArea */
+.termsArea {
+  min-height: 50px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: var(--line);
+}
+.termsMenu {
+  display: flex;
+  justify-content: center;
+}
+.termsMenu li {
+  position: relative;
+  padding: 0 10px;
+  text-align: center;
+}
+.termsMenu li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #c7c7c7;
+}
+.termsMenu li:first-child::before {
+  content: none;
+}
+.termsMenu li:first-child {
+  padding-left: 0;
+}
+.termsMenu li:last-child {
+  padding-right: 0;
+}
+.termsMenu li a {
+  color: var(--subTxtColor);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* auth */
+.authArea {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #464646;
+}
+.authTitle {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.authArea li {
+  padding: 1px 0;
+  color: #8d8d8d;
+  font-size: 12px;
+  font-weight: 300;
+}
+.authArea li:last-child {
+  padding-top: 3px;
+}
+.authArea li .classifyList {
+  padding-left: 20px;
+}
+
+.authArea.accordion,
+.authArea.accordion .accordionItem {
+  border: 0 none;
+}
+.authArea.accordion .accordionItem .accordionHeader {
+  height: 40px;
+  padding: 0;
+  border-bottom: 0 none;
+}
+.accordion .accordionItem .accordionHeader::before {
+  background-image: url("../img/common/arrow_accordion_default.svg");
+}
+.authArea.accordion .accordionItem .accordionBody {
+  display: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* accessAuth - 앱 접근권한 안내 */
+.accessAuthTitle {
+  padding: 30px 0;
+}
+.accessAuthTitle h2 {
+  font-size: 25px;
+}
+.accessAuthTitle .pageDesc {
+  margin-top: 10px;
+}
+.accessAuthList .classify {
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+/* 공통으로 사용할 좌측아이콘 리스트 */
+.leftIconList {
+  margin-top: 20px;
+}
+.leftIconList li {
+  position: relative;
+  min-height: 40px;
+  margin-bottom: 25px;
+  padding-left: 55px;
+  font-weight: 700;
+}
+.leftIconList li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: var(--line);
+  border-radius: 50%;
+  background: #fff url("../img/sub/ico_accessAuth_locate.svg") no-repeat center /
+    22px auto;
+}
+.leftIconList li.locate::before {
+  background-image: url("../img/sub/ico_accessAuth_locate.svg");
+  background-size: 17px auto;
+}
+.leftIconList li.record::before {
+  background-image: url("../img/sub/ico_accessAuth_record.svg");
+  background-size: 20px auto;
+}
+.leftIconList li.phone::before {
+  background-image: url("../img/sub/ico_accessAuth_phone.svg");
+  background-size: 22px auto;
+}
+.leftIconList li.save::before {
+  background-image: url("../img/sub/ico_accessAuth_save.svg");
+  background-size: 18px auto;
+}
+.leftIconList li.alarm::before {
+  background-image: url("../img/sub/ico_accessAuth_alarm.svg");
+  background-size: 21px auto;
+}
+.leftIconList li.photo::before {
+  background-image: url("../img/sub/ico_accessAuth_photo.svg");
+  background-size: 20px auto;
+}
+.leftIconList .desc {
+  padding-top: 1px;
+  color: var(--subTxtColor);
+  font-size: 13px;
+  font-weight: 300;
+}
+.accessAuthDescBox {
+  margin: 40px 0 50px;
+}
+
+/* messagePage - 에러페이지, 알림없음페이지 */
+.messagePage {
+  margin-top: 200px;
+  text-align: center;
+}
+.messagePage.system {
+  margin-top: 150px;
+}
+.messagePage.noAlarm {
+  margin-top: 170px;
+}
+.messagePage h2 {
+  position: relative;
+}
+.messagePage h2::before {
+  content: "";
+  position: absolute;
+  top: -85px;
+  left: calc(50% - 40px);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url("../img/sub/ico_error_404.svg") no-repeat center / 60px auto;
+}
+.messagePage.system h2::before {
+  background: url("../img/sub/ico_error_system.svg") no-repeat center / 70px
+    auto;
+}
+.messagePage.noAlarm h2::before {
+  background: url("../img/sub/ico_alarm_noAlarm.svg") no-repeat center / 70px
+    auto;
+}
+.messagePage .titleDesc {
+  margin-top: 15px;
+  color: var(--subTxtColor);
+  font-size: 13px;
+}
+.messagePage .titleDesc p + p {
+  margin-top: 8px;
+}
+.messagePage.system .titleDesc p + p {
+  margin-top: 20px;
+}
+.messagePage .subDesc {
+  margin-top: 35px;
+  font-size: 13px;
+}
+.messagePage .subDesc a {
+  color: #222;
+  z-index: 0;
+}
+.messagePage.system .subDesc {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: var(--bgGray);
+  color: var(--mainColor);
+  font-weight: 500;
+}
+.messagePage.system .subDesc p + p {
+  padding-top: 5px;
+}
+.messagePage.system .subDesc .date {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+
+/* authenticArea */
+.authenticArea {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #333;
+}
+/* authenticArea가 삭제되어 copyright 따로 사용 */
+/* 그래서 copyright를 p태그에서 div태그로 변경함 */
+/* margin-top 값 추가 */
+.copyright {
+  margin-top: 15px;
+  color: #888;
+  font-size: 11px;
+  font-weight: 300;
+}
+.copyrightC {
+  position: relative;
+  padding-right: 16px;
+  margin-right: 4px;
+  letter-spacing: 0;
+}
+.copyrightC::before {
+  content: "ⓒ";
+  position: absolute;
+  right: 0;
+  top: -4px;
+  font-size: 12px;
+}
+.authenticArea .authentication {
+  margin-top: 5px;
+  padding-left: 45px;
+  background: url("../img/common/img_authentication.png") no-repeat 3px 5px /
+    32px auto;
+  color: #666;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

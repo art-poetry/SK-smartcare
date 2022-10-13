@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/customer/customer.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <a href="#" class="btnBack"><span class="hidden">back</span></a>
+          <h2>1:1문의</h2>
+        </div>
+        <div class="headerTools">
+          <a href="#" class="btnAlarm"><span class="hidden">alarm</span></a>
+          <button href="#" class="btnMenuOpen">
+            <span class="hidden">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+      <!-- nav -->
+      <nav class="navbar" style="display: none">
+        <ul>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </header>
+    <!-- //header -->
+    <!-- contents / setting -->
+    <div class="contents">
+
+      <!-- coupon -->
+      <section class="inquiry">
+
+        <!-- tab -->
+        <ul class="tabTopLine">
+          <li><a href="#">문의하기</a></li>
+          <li><a href="#" class="on">문의내역</a></li>
+        </ul>
+        <!-- //tab -->
+
+        <!-- btnsTab -->
+        <ul class="btnsTab">
+          <li><a href="#" class="on">1개월</a></li>
+          <li><a href="#">3개월</a></li>
+          <li><a href="#">6개월</a></li>
+          <li><a href="#">전체</a></li>
+        </ul>
+        <!-- //btnsTab -->
+
+        <div class="oneToOne">
+
+          <div class="messagePage nothing" style="display:none;">
+            <div class="titleDesc">
+              <p>내용이 없습니다.</p>
+            </div>
+          </div>
+
+          <div class="titleBottLine">
+            <h3>문의내역</h3>
+            <select class="selectCustom" name="sample">
+              <option>전체</option>
+              <option>선택</option>
+              <option>선택</option>
+            </select>
+          </div>
+          <div class="allInquiry">
+            <p>총 <span>10</span>건</p>
+          </div>
+
+          <div class="fold on"><!-- 펼쳐졌을 때 on 클래스 -->
+              <div class="foldlist">
+                <span class="status">접수중</span>
+                <span class="tit"><em>[문의 구분]</em> 1:1문의 타이틀 노출 영역 1:1문의</span>
+                <span class="date">2021.03.15</span>
+              </div>
+              <!-- 문의 내용 상세 -->
+              <div class="foldview detailView">
+                <p>
+                  문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역.
+                </p>
+                <!-- 버튼 영역 -->
+                <div class="btnArea">
+                  <button>삭제</button>
+                  <button>수정</button>
+                </div>
+                <!-- //버튼 영역 -->
+              </div>
+              <!-- //문의 내용 상세 -->
+          </div>
+
+          <div class="fold on"><!-- 펼쳐졌을 때 on 클래스 -->
+              <div class="foldlist">
+                <span class="status complete">답변완료</span>
+                <span class="tit"><em>[문의 구분]</em> 1:1문의 타이틀 노출 영역 1:1문의</span>
+                <span class="date">2021.03.15</span>
+              </div>
+              <!-- 문의 내용 상세 -->
+              <div class="foldview">
+                <p>
+                  문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역.
+                </p>
+                <!-- 답변 있을 시 -->
+                <p class="answer">
+                  <span>답변</span>
+                  안녕하십니까 고객님.  관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세. 감사합니다.
+                </p>
+                <!-- //답변 있을 시 -->
+              </div>
+              <!-- //문의 내용 상세 -->
+          </div>
+
+          <div class="fold">
+              <div class="foldlist">
+                <span class="status complete">답변완료</span>
+                <span class="tit"><em>[문의 구분]</em> 공지사항 타이틀 영역 텍스트 길어 두 줄로 떨어지는 경우 타이틀 공지사항 영역</span>
+                <span class="date">2021.03.15</span>
+              </div>
+              <!-- 문의 내용 상세 -->
+              <div class="foldview">
+                <p>
+                  문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역. 문의 내용 상세 내용 문의 텍스트 노출 영역.
+                </p>
+                <!-- 답변 있을 시 -->
+                <p class="answer">
+                  <span>답변</span>
+                  안녕하십니까 고객님.  관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세 내용 영역 관리자 답변 상세. 감사합니다.
+                </p>
+                <!-- //답변 있을 시 -->
+              </div>
+              <!-- //문의 내용 상세 -->
+          </div>
+        </div>
+
+        <button class="btnMore"><span>더보기</span></button>
+
+      </section>
+      <!-- //coupon -->
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <footer></footer>
+    <!-- //footer -->
+  </body>
+</html>

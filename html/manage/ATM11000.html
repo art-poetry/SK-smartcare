@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/manage/manage.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <a href="#" class="btnBack"><span class="hidden">back</span></a>
+          <h2>차량관리</h2>
+        </div>
+        <div class="headerTools">
+          <a href="#" class="btnAlarm"><span class="hidden">alarm</span></a>
+          <button href="#" class="btnMenuOpen">
+            <span class="hidden">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+      <!-- nav -->
+      <nav class="navbar" style="display: none">
+        <ul>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </header>
+    <!-- //header -->
+    <!-- contents / setting -->
+    <div class="contents withFooterBtn">
+
+      <!-- 차량 준비중 -->
+      <section class="carSummary">
+        <div class="shadowBox">
+          <div class="linkWithArrow">
+            <a href="#">
+              <span class="title"><span class="letterSpacing">39</span>하<span class="carNum">9155</span></span>
+              <span class="carModel">쉐보레 2019 THE NEW 스파크</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="carDetail">
+        <div>
+          <ul class="ownCarDesc">
+            <li>운전자:<span class="value">홍길동</span></li>
+            <li>계약기간:<span class="value letterSpacing">~21.04.30</span></li>
+          </ul>
+
+          <!-- 차량사진 -->
+          <div class="carModelPhoto">
+            <img
+              src="../../assets/img/sub/spark@3x.png"
+              alt="쉐보레 2019 THE NEW 스파크"
+            />
+          </div>
+          <!-- //차량사진 -->
+        </div>
+      </section>
+
+      <section class="separate">
+        <h2>정비 서비스</h2>
+        <div class="shadowBox">
+          <dl class="repairService">
+            <dt>정비 상품</dt>
+            <dd><a href="#">실속정비</a></dd>
+          </dl>
+          <dl class="repairService">
+            <dt>정비 이력</dt>
+            <dd><a href="#"><span>4</span>건</a></dd>
+          </dl>
+          <dl class="repairService">
+            <dt>사고 이력</dt>
+            <dd><a href="#"><span>3</span>건</a></dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="separate">
+        <h2>운행 정보</h2>
+        <div class="shadowBox">
+            <ul class="tableFormType horizonType">
+                <li>
+                    <div class="property">총 주행거리</div>
+                    <div class="value"><span class="numBig">20,500</span>km</div>
+                </li>
+                <li>
+                    <div class="property">이번 달 연비</div>
+                    <div class="value"><span class="numBig">30</span>km/l</div>
+                </li>
+                <li>
+                    <div class="property">이번 달<br>안전 점수</div>
+                    <div class="value"><span class="numBig">90</span>점</div>
+                </li>
+            </ul>
+
+            <ul class="tableFormType horizonType">
+                <li>
+                    <div class="property">총 약정거리</div>
+                    <div class="value"><span class="numBig">220,500</span>km</div>
+                </li>
+                <li>
+                    <div class="property">복합연비</div>
+                    <div class="value"><span class="numBig">12.5</span>km/l</div>
+                </li>
+                <li>
+                    <div class="property">이번 달<br>운전자 평균점수</div>
+                    <div class="value"><span class="numBig">75</span>점</div>
+                </li>
+            </ul>
+        </div>
+      </section>
+
+      <section class="separate graphWrap mileage">
+        <h2>월별 주행거리</h2>
+        
+        <div class="period">
+            <p>2020년 4월</p> ~ <p>2020년 4월</p>
+            <button>기간 선택</button>
+        </div>
+
+        <div class="graphContent">
+            그래프 영역
+        </div>
+      </section>
+
+      <section class="separate graphWrap efficiency">
+        <h2>월별 연비 <span>단위 : km/ℓ</span></h2>
+
+        <div class="graphContent">
+            그래프 영역
+        </div>
+      </section>
+
+      <section class="separate safeDrive">
+        <h2>지난 달 안전운전 점수</h2>
+        <div class="shadowBox">
+            <div class="score">
+                <span class="rank">상위 29%</span>
+                <span><em>99</em>점</span>
+            </div>
+            <div class="exemplary">
+                <dl>
+                    <dt>가속</dt>
+                    <dd>모범</dd>
+                </dl>
+                <dl>
+                    <dt>급가속</dt>
+                    <dd>모범</dd>
+                </dl>
+                <dl>
+                    <dt>급감속</dt>
+                    <dd>모범</dd>
+                </dl>
+            </div>
+        </div>
+        
+      </section>
+
+      <!-- //차량 준비중 -->
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <footer>
+        <div class="btnFootBarWrap">
+            <button href="#" class="btnFooterColorBar">차량 등록하기</button>
+        </div>    
+    </footer>
+    <!-- //footer -->
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/payment/payment.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <h2>납부방법 변경</h2>
+        </div>
+        <div class="headerTools">
+          <button href="#" class="btnClose">
+            <span class="hidden">close</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="contents withFooterBtn">
+      <section class="paymentEdit">
+        <h3>납부방법</h3>
+        <ul class="radioList">
+          <li>            
+            <div class="radioItem on"><!-- class="on" 추가시 hiddenBox 보여짐 -->
+              <div class="radioCustom">
+                <input type="radio" id="a1" name="aa">
+                <label for="a1"></label>
+              </div>
+              <label for="a1">가상계좌</label>
+            </div>
+            <div class="hiddenBox">
+              <ul class="viewList">
+                <li>
+                  <div class="property">은행</div>
+                  <div class="value">신한</div>
+                </li>
+                <li>
+                  <div class="property">계좌번호</div>
+                  <div class="value">1234-5678-1234</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="radioItem on"><!-- class="on" 추가시 hiddenBox 보여짐 -->
+              <div class="radioCustom">
+                <input type="radio" id="a2" name="aa">
+                <label for="a2"></label>
+              </div>
+              <label for="a2">자동이체</label>
+            </div>
+            <div class="hiddenBox">
+              <ul class="viewList">
+                <li>
+                  <div class="property">은행</div>
+                  <div class="value">
+                    <select class="selectCustom type2" name="sample">
+                      <option>은행 선택</option>
+                      <option>선택1</option>
+                      <option>선택2</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="rowLine">
+                  <div class="property">계좌번호</div>
+                  <div class="value">
+                    <div class="inputBtnSet">
+                      <input type="number" class="inputLine onlyNumEn" placeholder="계좌번호를 입력해주세요.">
+                      <a href="#" class="btnOutlineRound">인증</a>
+                    </div>
+                    <input type="text" class="inputLine" placeholder="계좌명의자를 입력해주세요.">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <h4><strong>꼭 확인해 주세요!</strong></h4>
+        <ul class="bulDotList">
+          <li>납부정보 변경은 신청 후 영업일 기준 2~5일 이내 처리됩니다.</li>
+          <li>자세한 문의는 고객센터(1599-9111) 또는 1:1문의를 이용해 주세요.</li>
+        </ul>
+      </section>
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <div class="btnFootBarWrap">
+      <button href="#" class="btnFooterColorBar">변경 신청</button>
+    </div>    
+    <!-- //footer -->
+  </body>
+</html>

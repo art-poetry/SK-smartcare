@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/contract/contract.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <a href="#" class="btnBack"><span class="hidden">back</span></a>
+          <h2>위약금 조회</h2>
+        </div>
+        <div class="headerTools">
+          <button href="#" class="btnClose">
+            <span class="hidden">close</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- contents penaltyCheck(ksa) -->
+    <div class="contents penaltyCheck">
+
+      <!-- 상단 페이지설명 -->
+      <ul class="bulDotList">
+        <li>반납전 발생 할 위약금 예상금액입니다.</li>
+      </ul>
+      <!-- //상단 페이지설명 -->
+
+      <!-- 예상 위약금 -->
+      <section>
+        <h3>예상 위약금</h3>
+        <ul class="penaltyCheckItems">
+          <li>
+            <span class="classify">잔액</span>
+            <ul class="tableFormType">
+              <li>
+                <div class="property">보증금</div>
+                <div class="value">0원</div>
+              </li>
+              <li>
+                <div class="property">선납금</div>
+                <div class="value">0원</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="classify">비용처리</span>
+            <ul class="tableFormType">
+              <li>
+                <div class="property">기청구 미수내역</div>
+                <div class="value">0원</div>
+              </li>
+              <li>
+                <div class="property">미청구 대여료</div>
+                <div class="value">200,000원</div>
+              </li>
+              <li>
+                <div class="property">위약금</div>
+                <div class="value">12,000,000원</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="tableFormType amount">
+              <li>
+                <div class="property">예상 위약금</div>
+                <div class="value">12,200,000원</div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!-- //예상 위약금 -->
+
+      <!-- 하단 부가설명 -->
+      <ul class="bulDotList">
+        <li>예상 위약금은 실제 반납일자, 차량상태, 주행거리 등에 따라 일부 상이할 수 있습니다.</li>
+      </ul>
+      <!-- 하단 부가설명 -->
+
+    </div>
+    <!-- //contents -->
+
+  </body>
+</html>

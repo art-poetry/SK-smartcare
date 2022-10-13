@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/modal.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- 임시 컨텐츠 -->
+    <div class="contents">
+      모달 기본 타입 예시<br />전체 타이틀의 description이 상단에 있는 경우<br />txtDescOfTitle
+      클라스<br />폼 성격별 그루핑 formDivision 클라스
+    </div>
+    <!-- //임시 컨텐츠 -->
+
+    <!-- modal -->
+    <div class="modal">
+      <!-- modalWrap -->
+      <div class="modalWrap">
+        <!-- modalHeader -->
+        <div class="modalFixedWrap">
+          <div class="modalHeader">
+            <p class="modalTitle">보험가입증명서 발급요청</p>
+            <button class="modalClose">
+              <span class="hidden">Close</span>
+            </button>
+          </div>
+        </div>
+        <!-- //modalHeader -->
+
+        <!-- modalBody -->
+        <div class="modalBody askInsure">
+          <!-- insureCompany -->
+          <dl class="insureCompany">
+            <dt>보험사</dt>
+            <dd>전국렌터카공제조합</dd>
+          </dl>
+          <!-- //insureCompany -->
+
+          <!-- 폼 그룹 -->
+          <div class="formDivision emailInputArea">
+            <lable for="email" class="emailLabel">증명서 수취 이메일</lable>
+            <div class="emailInputBox">
+              <input
+                type="text"
+                class="inputLine letterSpacing"
+                id="email"
+                placeholder="이메일 입력"
+              />
+              <div class="atMark">&#64;</div>
+              <input
+                type="text"
+                class="inputLine letterSpacing"
+                id=""
+                placeholder="직접 입력"
+              />
+            </div>
+            <select class="selectCustomBtn">
+              <option value="">직접 입력</option>
+              <option value="chol.com">chol.com</option>
+              <option value="dreamwiz.com">dreamwiz.com</option>
+              <option value="empal.com">empal.com</option>
+              <option value="freechal.com">freechal.com</option>
+              <option value="gmail.com">gmail.com</option>
+              <option value="hanafos.com">hanafos.com</option>
+              <option value="hanmail.net">hanmail.net</option>
+              <option value="hanmir.com">hanmir.com</option>
+              <option value="hitel.net">hitel.net</option>
+              <option value="hotmail.com">hotmail.com</option>
+              <option value="korea.com">korea.com</option>
+              <option value="lycos.co.kr">lycos.co.kr</option>
+              <option value="msn.com">msn.com</option>
+              <option value="nate.com">nate.com</option>
+              <option value="naver.com">naver.com</option>
+              <option value="netian.com">netian.com</option>
+              <option value="orgio.net">orgio.net</option>
+              <option value="paran.com">paran.com</option>
+              <option value="unitel.co.kr">unitel.co.kr</option>
+              <option value="yahoo.co.kr">yahoo.co.kr</option>
+            </select>
+          </div>
+          <!-- //폼 그룹 -->
+
+          <!-- description -->
+          <ul class="bulDotList">
+            <li>
+              입력하신 이메일 주소는 해당 보험사에 발송되며, 보험사에서
+              보험가입증명서를 최대 2영업일 이내에 보내 드릴 예정입니다.
+            </li>
+          </ul>
+          <!-- //description -->
+        </div>
+        <!-- //modalBody -->
+
+        <!-- modalFooter -->
+        <div class="modalFixedWrap">
+          <div class="modalFooter">
+            <button type="button" class="btnFooterColorBar">보내기</button>
+          </div>
+        </div>
+        <!-- //modalFooter -->
+      </div>
+      <!-- //modalWrap -->
+    </div>
+    <!-- //modal -->
+  </body>
+</html>

@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/* mainSummary */
+.gradientBg {
+  position: relative;
+  min-height: 280px;
+  padding: 50px 20px 0;
+}
+.ownCarInfo {
+  margin: 10px auto 0;
+  color: #fff;
+  text-align: center;
+}
+.ownCarInfo .classify {
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.ownCarInfo .ownCar {
+  font-size: 25px;
+  font-weight: 700;
+}
+.ownCarInfo .ownCar .ownCarNum {
+  position: relative;
+  margin-left: 8px;
+  font-size: 27px;
+}
+.ownCarInfo .ownCar .ownCarNum::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  bottom: 1px;
+  display: block;
+  width: calc(100% + 6px);
+  height: 1px;
+  background-color: #fff;
+}
+.ownCarDesc {
+  position: absolute;
+  left: 30px;
+  bottom: 90px;  
+}
+.ownCarDesc li {
+  display: table;
+  height: 26px;  
+  line-height: 26px;
+  margin-bottom: 10px;
+  padding: 0 12px;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  font-size: 13px;
+}
+.ownCarDesc li:last-child {
+  margin-bottom: 0;
+}
+.ownCarDesc li .value {
+  padding-left: 5px;
+  font-weight: 500;
+}
+.carModelPhoto {
+  right: 25px;
+  bottom: 40px;
+}
+
+/* infoListArea */
+.infoListArea {
+  margin-top: -20px;
+}
+.shadowBox h3,
+.blueBox h3 {
+  padding: 5px 0 15px;
+  font-weight: 700;
+}
+.shadowBox h3 span {
+  font-size: 13px;
+}
+
+/* horizon 타입 - 지난달 운행정보 */
+.tableFormType.horizonType li {
+  flex-basis: 30%;
+}
+.tableFormType.horizonType li:first-child {
+  flex-basis: 40%;
+}
+.tableFormType.horizonType li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 1px;
+  height: 45px;
+  background-color: #eee;
+  margin-top: -3px;
+}
+.tableFormType.horizonType li:first-child:before {
+  content: none;
+}
+.tableFormType.horizonType li .property {
+  color: var(--subTxtColor);
+  font-size: 11px;
+}
+.tableFormType.horizonType li .value {
+  padding-top: 8px;
+  font-size: 11px;
+}
+.tableFormType.horizonType .numBig {
+  font-size: 21px;
+}
+
+/* 이용중인 정비상품 */
+.repairPackage {
+  padding: 20px;
+  background-color: var(--bgGray);
+}
+.repairPackage h4 {
+  font-weight: 700;
+}
+.repairDate {
+  font-size: 13px;
+  font-weight: 300;
+  text-align: right;
+}
+.repairDate .date {
+  color: var(--mainColor);
+  font-weight: 700;
+}
+.repairPackageDesc {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  font-size: 13px;
+  font-weight: 300;
+}
+.repairPackageDesc p + p {
+  margin-top: 3px;
+}
+.repairArea .tableFormType.horizonType {
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.repairArea .tableFormType.horizonType li {
+  flex-basis: 33.333%;
+  padding: 10px 0;
+}
+.repairArea .tableFormType.horizonType li::before {
+  content: none;
+} 
+.repairArea .tableFormType.horizonType li .property {
+  padding: 35px 0 5px;
+  background: url("../img/sub/ico_repair_oil.svg") no-repeat top center;
+  background-size: 26px auto;
+}
+.repairArea .tableFormType.horizonType li.oil .property {
+  background-image: url("../img/sub/ico_repair_oil.svg") no-repeat top center;
+}
+.repairArea .tableFormType.horizonType li.filter .property {
+  background-image: url("../img/sub/ico_repair_filter.svg");
+}
+.repairArea .tableFormType.horizonType li.wiper .property {
+  background-image: url("../img/sub/ico_repair_wiper.svg");
+  background-size: 33px auto;
+}
+.repairArea .tableFormType.horizonType li.battery .property {
+  background-image: url("../img/sub/ico_repair_battery.svg");
+  background-size: 30px auto;
+}
+.repairArea .tableFormType.horizonType li.tire .property {
+  background-image: url("../img/sub/ico_repair_tire.svg");
+  background-size: 30px auto;
+}
+.repairArea .tableFormType.horizonType li .value {
+  display: inline-block;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  background-color: var(--mainColor);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+.repairArea .tableFormType.horizonType li .value.zeroTimes {
+  border: 1px solid var(--mainColor);
+  background-color: transparent;
+  color: var(--mainColor);
+}
+
+/* mainUnregister, readyInfoListArea */
+.registerArea {
+  margin: 30px 0;
+}
+.registerArea h3 {
+  font-weight: 700;
+}
+.registerArea .btnSolid {
+  margin-top: 25px;
+}
+.mainUnregister .infoListArea,
+.readyInfoListArea {
+  position: relative;
+  margin-top: 0;
+}
+.mainUnregister .infoListArea {
+  padding-top: 40px;
+}
+.mainUnregister .infoListArea::after,
+.readyInfoListArea::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  display: block;
+  width: calc(100% + 40px);
+  background: rgba(255, 255, 255, .5);
+  z-index: 1;
+}
+.readyStepArea .orderStepList {
+  margin: 10px 0;
+}

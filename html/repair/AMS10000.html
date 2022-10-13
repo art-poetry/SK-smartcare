@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/repair/repair.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <a href="#" class="btnBack"><span class="hidden">back</span></a>
+          <h2>정비 서비스</h2>
+        </div>
+        <div class="headerTools">
+          <a href="#" class="btnAlarm"><span class="hidden">alarm</span></a>
+          <button href="#" class="btnMenuOpen">
+            <span class="hidden">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+      <!-- nav -->
+      <nav class="navbar" style="display: none">
+        <ul>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </header>
+    <!-- //header -->
+    <!-- contents / setting -->
+    <div class="contents">
+        <section class="separate">
+            <div class="gradientBg">
+                <strong>SK렌터카 정비 네트워크로<br>쉽고 편리하게<br>차량 관리 받으세요.</strong>
+                <span class="icon repair"></span>
+            </div>
+            <div class="shadowBox">
+                <span class="subText">내가 선택한 정비서비스</span>
+                <dl class="textBox">
+                    <dt>실속정비</dt>
+                    <dd>교체 빈도가 많은 주요 소모품 교체<br>방문점검 제공 서비스</dd>
+                </dl>
+                <div class="repairTable">
+                  <p class="tit">주요 부품 권장 점검주기</p>
+                  <table>
+                    <colgroup>
+                      <col style="width:33.333%">
+                      <col style="width:33.333%">
+                      <col style="width:33.333%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>점검항목</th>
+                        <th>약정거리(Km)</th>
+                        <th>주기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>엔진오일</td>
+                        <td>1만</td>
+                        <td>12개월</td>
+                      </tr>
+                      <tr>
+                        <td>에어컨필터</td>
+                        <td>2만</td>
+                        <td>12개월</td>
+                      </tr>
+                      <tr>
+                        <td>와이퍼</td>
+                        <td>2만</td>
+                        <td>12개월</td>
+                      </tr>
+                      <tr>
+                        <td>브레이크패드</td>
+                        <td>4만</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>타이어</td>
+                        <td rowspan="2">6만<br>(*경차 경우 2만)</td>
+                        <td>마모도 (수시)</td>
+                      </tr>
+                      <tr>
+                        <td>배터리</td>
+                        <td>36개월</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="btnWrap">
+                  <button class="btnPdf" type="button"><span>소모품 교환 주기표 PDF 다운로드</span></button>
+                </div>
+                <!-- <ul class="numList">
+                    <li><strong class="numBullet">1</strong>엔진오일세트 <span>(1회/약정거리 1만km마다)</span><br><em>(엔진오일, 오일필터, 에어클리너)</em></li>
+                    <li><strong class="numBullet">2</strong>에어컨필터, 와이퍼, 차량점검 <span>(2회/년)</span></li>
+                </ul> -->
+                <div class="serviceBox">
+                  <ul class="tableFormType horizonType">
+                    <li>
+                      <div class="property oil">엔진오일</div>
+                      <div class="value">1회</div>
+                    </li>
+                    <li>
+                      <div class="property ac">에어컨필터</div>
+                      <div class="value">1회</div>
+                    </li>
+                    <li>
+                      <div class="property wiper">와이퍼</div>
+                      <div class="value">1회</div>
+                    </li>
+                    <li>
+                      <div class="property battery">배터리</div>
+                      <div class="value zeroTimes">0회</div>
+                      <!-- 0회는 스타일이 다름 zeroTimes 클래스 적용 -->
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <dl class="orgBox">
+                <dt>정비 예정일</dt>
+                <dd>2021년 3월 28일 오후</dd>
+            </dl>
+            <div class="article">
+              <h3>방문점검 담당자 </h3>
+              <h4>정비파트 / 담당자 (010-1234-5678)</h4>
+              <ul class="bulDotList">
+                  <li>정비주소 변경 시, 담당자는 변경 될 수 있습니다.</li>
+              </ul>
+            </div>
+            <div class="boxBtn">
+              <a href="#none">제휴 정비소 찾기 </a>
+            </div>            
+        </section>
+        <section class="separate">
+          <div class="article">
+            <h3 class="txtEmphasis">정비서비스 이용안내</h3>
+            <ul class="bulDotList">
+                <li>정비예정일이 없는 고객님은 정비예약을 진행해 주세요.</li>
+                <li>가입된 정비서비스 상품에 따라 원하시는 정비를 선택 가능합니다.</li>
+                <li>정비예약이 신청 후 D-1일까지는 예약 변경이 가능합니다.</li>
+            </ul>
+          </div>
+        </section>
+    </div>
+    <!-- //contents -->
+    <div class="btnFootBarWrap">
+      <button class="btnFooterYesNoBar">정비이력</button>
+      <button class="btnFooterYesNoBar">점검일 확정(변경)하기</button>
+    </div>
+
+    <!-- footer -->
+    <footer></footer>
+    <!-- //footer -->
+  </body>
+</html>

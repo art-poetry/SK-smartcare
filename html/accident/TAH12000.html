@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/accident/accident.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <a href="#" class="btnBack"><span class="hidden">back</span></a>
+          <h2>차량관리</h2>
+        </div>
+        <div class="headerTools">
+          <a href="#" class="btnAlarm"><span class="hidden">alarm</span></a>
+          <button href="#" class="btnMenuOpen">
+            <span class="hidden">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+      <!-- nav -->
+      <nav class="navbar" style="display: none">
+        <ul>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </header>
+    <!-- //header -->
+    <!-- contents / setting -->
+    <div class="contents">
+      <ul class="tabTopLine">
+        <li><a href="#">사고접수 현황</a></li>
+        <li><a href="#" class="on">사고 이력</a></li>
+      </ul>
+      <section>
+        <ul class="btnsTab">
+          <li><a href="#" class="on">1개월</a></li>
+          <li><a href="#">3개월</a></li>
+          <li><a href="#">6개월</a></li>
+          <li><a href="#">전체</a></li>
+        </ul>
+        <div class="titleBottLine">
+          <h3>사고이력</h3>
+          <select class="selectCustom" name="">
+            <option>전체</option>
+            <option>접수완료</option>
+            <option>접수중</option>
+          </select>
+        </div>
+        <div class="totalArea">
+          <p>총 <span>10</span>건</p>
+        </div>
+        <div class="accidentList">
+          <div class="fold on"><!-- 펼쳐졌을 때 on 클래스 -->
+            <div class="foldlist">
+              <span class="status">접수중</span>
+              <span class="tit">경기도 이천시 북하천수변공원 입구</span>
+              <span class="date">2021.03.15</span>
+            </div>
+            <div class="foldview">
+              <ul class="tableFormType">
+                <li>
+                  <div class="property">사고장소</div>
+                  <div class="value">경기도 이천시 북하천수변공원 입구</div>
+                </li>
+                <li>
+                  <div class="property">사고일시</div>
+                  <div class="value">2021-03-02</div>
+                </li>
+                <li class="rowLine">
+                  <div class="property">사고사진</div>
+                  <div class="value">
+                    <div class="photoList">
+                      <div class="item"><span><img src="../../assets/img/sub/thumb_acc1.png" alt=""></span></div>
+                      <div class="item"><span><img src="../../assets/img/sub/thumb_acc1.png" alt=""></span></div>
+                      <div class="item"><span><img src="../../assets/img/sub/thumb_acc1.png" alt=""></span></div>
+                      <div class="item"><span><img src="../../assets/img/sub/thumb_acc1.png" alt=""></span></div>
+                      <div class="item"><span><img src="../../assets/img/sub/thumb_acc1.png" alt=""></span></div>                      
+                      <div class="item noImg"><span>NO IMAGE</span></div><!-- class="noImg" 추가 -->
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="btnArea">
+                <button>삭제</button>
+                <button>수정</button>
+              </div>
+            </div>
+          </div>
+          <div class="fold">
+            <div class="foldlist">
+              <span class="status complete">접수완료</span><!-- 접수완료 class="complete" -->
+              <span class="tit">경기도 이천시 북하천수변공원 입구</span>
+              <span class="date">2021.03.15</span>
+            </div>
+            <div class="foldview">
+              <ul class="tableFormType">
+                <li>
+                  <div class="property">사고장소</div>
+                  <div class="value">경기도 이천시 북하천수변공원 입구</div>
+                </li>
+                <li>
+                  <div class="property">사고일시</div>
+                  <div class="value">2021-03-02</div>
+                </li>
+                <li class="rowLine">
+                  <div class="property">사고사진</div>
+                  <div class="value">
+                    <div class="photoList">
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc1.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc2.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc3.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc4.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc1.png" alt=""></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          <div class="fold">
+            <div class="foldlist">
+              <span class="status complete">접수완료</span><!-- 접수완료 class="complete" -->
+              <span class="tit">경기도 이천시 북하천수변공원 입구</span>
+              <span class="date">2021.03.15</span>
+            </div>
+            <div class="foldview">
+              <ul class="tableFormType">
+                <li>
+                  <div class="property">사고장소</div>
+                  <div class="value">경기도 이천시 북하천수변공원 입구</div>
+                </li>
+                <li>
+                  <div class="property">사고일시</div>
+                  <div class="value">2021-03-02</div>
+                </li>
+                <li class="rowLine">
+                  <div class="property">사고사진</div>
+                  <div class="value">
+                    <div class="photoList">
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc1.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc2.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc3.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc4.png" alt=""></div>
+                      <div class="item"><img src="../../assets/img/sub/thumb_acc1.png" alt=""></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <footer></footer>
+    <!-- //footer -->
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/modal.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- 임시 컨텐츠 -->
+    <div class="contents">모달 alertType 타입 예시</div>
+    <!-- //임시 컨텐츠 -->
+
+    <!-- modal -->
+    <div class="modal">
+      <!-- modalWrap 얼럿타입은 modalAlertType 추가 -->
+      <div class="modalWrap modalAlertType">
+        <!-- modalHeader -->
+        <div class="modalFixedWrap">
+          <div class="modalHeader">
+            <p class="modalTitle">안내</p>
+          </div>
+        </div>
+        <!-- //modalHeader -->
+
+        <!-- modalBody -->
+        <div class="modalBody passChange">
+
+          <!-- 컨텐츠 내 타이틀이 있는 경우 -->
+          <p class="txtTitle">고객님의 소중한 개인정보 보호를 위해 <strong>비밀번호를 변경</strong>해주세요.</p>
+          <!-- //컨텐츠 내 타이틀이 있는 경우 -->
+
+          <!-- 기본 텍스트 - 강조 텍스트에는 strong -->
+          <p class="txtCont">
+            개인정보 도용으로 인한<br />고객님의 피해를 방지하고자 <strong>3개월 주기로 비밀번호 변경을 안내</strong>해드리고 있습니다.<br />(띄어쓰기 없이 영문, 숫자, 특수문자 포함 10~20자 이내)
+          </p>
+          <!-- //기본 텍스트 - 강조 텍스트에는 strong -->
+
+        </div>
+        <!-- //modalBody -->
+
+        <!-- modalFooter -->
+        <div class="modalFixedWrap">
+          <div class="modalFooter">
+            <button type="button" class="btnFooterTxtBar">3개월 후 변경</button>
+            <button type="button" class="btnFooterTxtBar">지금 변경</button>
+          </div>
+        </div>
+        <!-- //modalFooter -->
+      </div>
+      <!-- //modalWrap -->
+    </div>
+    <!-- //modal -->
+  </body>
+</html>

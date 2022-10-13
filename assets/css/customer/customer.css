@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.inquiry .btnsTab {margin-bottom:35px;}
+.inquiry .btnFooterColorBar {position:fixed; bottom:0; left:0;}
+
+.oneToOne .messagePage.nothing .titleDesc {position:relative; font-size:15px; color:#222;}
+.oneToOne .messagePage.nothing .titleDesc::before {content:''; position:absolute; top:-85px; left:calc(50% - 40px); display:block; width:80px; height:80px; background:url("../../img/sub/nothing_ico.svg") no-repeat center / 60px auto;}
+
+.allInquiry {margin-top:15px; font-size:13px; font-weight:bold;}
+.allInquiry p {margin:15px 0 30px;}
+.allInquiry span {color:var(--mainColor);}
+
+.oneToOne.write dl {margin-top:30px; font-size:13px;}
+.oneToOne.write dl dt {position:relative; display:inline-block; margin-bottom:20px; font-weight:bold; color:#222;}
+.oneToOne.write dl dt::after {content:''; position:absolute; top:2px; right:-7px; display:inline-block; width:4px; height:4px; border-radius:50%; background:var(--mainColor);}
+.oneToOne.write dl dd {margin-bottom:25px;}
+.oneToOne.write dl dd textarea {width:100%; min-height:330px; resize:none;}
+
+/* common */
+.fold::before {content:""; position:relative; left:-20px; display:block; width:calc(100% + 40px); border-top:var(--line);}
+.fold + .fold::before {border-top:0;}
+.fold::after {content:""; position:relative; left:-20px; display:block; width:calc(100% + 40px); border-bottom:var(--line);}
+.fold.on .foldlist::before {-webkit-transform:rotate(180deg); -ms-transform:rotate(180deg); transform:rotate(180deg);}
+.fold.on .foldview {display:block;}
+
+.foldlist {position:relative; padding:25px 0 0;}
+.foldlist::before {content:""; display:inline-block; position:absolute; top:55%; right:0; width:13px; height:7px; background:url("../../img/common/arrow_accordion_default.svg") no-repeat center / 13px auto;}
+.foldlist::after {content:""; position:relative; left:-20px; display:block; width:calc(100% + 40px);}
+.foldlist span {display:block;}
+.foldlist span.status {font-size:12px; font-weight:bold; color:var(--subTxtColor); line-height:12px;}
+.foldlist span.status.complete {color:var(--mainColor);}
+.foldlist span.tit {width:95%; margin:15px 0 12px; font-size:15px; font-weight:bold; color:#222; line-height:20px;}
+.foldlist span.tit em {font-style:normal;}
+.foldlist span.date {margin-bottom:25px; font-size:12px; color:var(--subTxtColor); line-height:12px;}
+
+.foldview {display:none; width:calc(100% + 40px); margin-left:-20px; padding:0 20px; font-size:13px; color:#222; border-top:var(--line); background:var(--bgGray);}
+.foldview p {padding:30px 0;}
+.foldview p.answer {border-top:var(--line);}
+.foldview p.answer span {display:block; margin-bottom:13px; font-size:15px; font-weight:bold;}
+.foldview p.answer span::before {content:''; display:inline-block; width:20px; height:20px; margin-right:8px; vertical-align:middle; background:url("../../img/common/ico_answer.svg") no-repeat center / 20px auto;}
+.foldview .btnArea {padding-bottom:25px; text-align:right;}
+.foldview .btnArea button {font-size:13px; font-weight:bold; color:#222;}
+.foldview .btnArea button + button::before {content:''; display:inline-block; width:3px; height:3px; margin:0 10px 0 7px; vertical-align:middle; background:#c7c7c7; border-radius:50%;}
+
+.btnMore {display:block; width:100%; margin:15px 0 11px; padding:10px 0; font-size:13px; color:var(--subTxtColor); text-align:center;}
+.btnMore span::after {content:""; display:inline-block; width:9px; height:5px; margin-left:8px; vertical-align:middle; background:url("../../img/common/arrow_accordion_default.svg") no-repeat center / 9px auto;}
+
+.notice .titleBottLine, .faq .titleBottLine {margin-top:20px;}
+.notice .foldlist {padding:15px 0 0;}
+.notice .foldlist span.tit, .faq .foldlist span.tit {width:90%;}
+.icoNew::before {top:-2px; right:-25px;}
+
+.downloadList {margin-bottom:20px;}
+.downloadList li {padding:20px 0 25px; border-bottom:var(--line);}
+.downloadList li span {display:block; margin-bottom:12px; font-weight:bold;}
+.downloadList li .btnSolid {width:auto; height:30px; padding:0 14px; font-size:13px;}
+.downloadList li .btnSolid + .btnSolid {margin-left:3px;}

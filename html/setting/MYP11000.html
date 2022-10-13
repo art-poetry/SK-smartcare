@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/setting/setting.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <h1 class="hidden">SK렌터카</h1>
+          <a href="#" class="logo"></a>
+        </div>
+        <div class="headerTools">
+          <button href="#" class="btnClose">
+            <span class="hidden">close</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- contents - setting - myPage -->
+    <div class="contents">
+      <!-- summaryArea -->
+      <section class="separate">
+        <!-- summary -->
+        <div class="summary myPage">
+          <div class="account">
+            <span class="classifyTag">법인</span>
+            <p class="name">홍길동님</p>
+          </div>
+          <div class="btnSet">
+            <a href="#"><span class="hidden">설정</span></a>
+          </div>
+        </div>
+        <!-- //summary -->
+
+        <!-- summarySub -->
+        <div class="summarySub">
+          <div class="companyName">(주)홍길동코퍼레이션</div>
+          <div class="classify">법인 사용자</div>
+
+          <div class="unregisterUser">
+            <div class="titleBox">
+              <p>차량 미등록 사용자</p>
+              <span>차량 등록 후 다양한 서비스를 이용하세요.</span>
+            </div>
+            <div class="btnRegister">
+              <a href="#"><span class="hidden">등록하기</span></a>
+            </div>
+          </div>
+
+          <ul>
+            <li>
+              <span>쿠폰</span>
+              <span><strong>1</strong>개</span>
+            </li>
+            <li>
+              <span>문의</span>
+              <span><strong>0</strong>개</span>
+            </li>
+          </ul>
+        </div>
+        <!-- //summarySub -->
+      </section>
+      <!-- //summaryArea -->
+
+      <!-- infoBox -->
+      <section class="infoBox separate">
+        <ul>
+          <!-- 계약정보 -->
+          <li class="separate">
+            <!-- on 붙는 경우 / default가 on 붙어있음 -->
+            <div class="accordion">
+              <div class="accordionItem">
+                <button class="accordionHeader on">계약정보</button>
+                <ul class="accordionBody" style="display: block">
+                  <li class="contract">
+                    <div class="subHeader">계약관리</div>
+                    <ul>
+                      <li><a href="#">계약정보</a></li>
+                    </ul>
+                  </li>
+                  <li class="payment">
+                    <div class="subHeader">납입관리</div>
+                    <ul>
+                      <li><a href="#">청구서 조회</a></li>
+                      <li><a href="#">청구/미납 내역</a></li>
+                      <li><a href="#">과태료</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- //계약정보 -->
+
+          <!-- 차량정보 -->
+          <li class="separate">
+            <div class="accordion">
+              <div class="accordionItem">
+                <button class="accordionHeader on">차량정보</button>
+                <ul class="accordionBody" style="display: block">
+                  <li class="manage">
+                    <div class="subHeader">차량관리</div>
+                    <ul>
+                      <li><a href="#">차량정보</a></li>
+                    </ul>
+                  </li>
+                  <li class="repair">
+                    <div class="subHeader">정비서비스</div>
+                    <ul>
+                      <li><a href="#">정비내역</a></li>
+                      <li><a href="#">정비예약</a></li>
+                      <li><a href="#">제휴정비소 찾기</a></li>
+                    </ul>
+                  </li>
+                  <li class="accident">
+                    <div class="subHeader">사고관리</div>
+                    <ul>
+                      <li><a href="#">사고접수</a></li>
+                      <li><a href="#">사고내역</a></li>
+                    </ul>
+                  </li>
+                  <li class="service">
+                    <div class="subHeader">서비스</div>
+                    <ul>
+                      <li><a href="#">쿠폰관리</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- //차량정보 -->
+        </ul>
+      </section>
+      <!-- //infoBox -->
+
+      <!-- csCenter -->
+      <section class="csCenter separate">
+        <div class="accordion">
+          <div class="accordionItem">
+            <button class="accordionHeader on">고객센터</button>
+            <ul class="accordionBody" style="display: block">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">1:1문의</a></li>
+              <li><a href="#">양식 다운로드</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- //csCenter -->
+
+      <!-- famSite -->
+      <section class="famSite separate">
+        <h3>Family site</h3>
+        <ul>
+          <li><a href="#">SK렌터카</a></li>
+          <li><a href="#">이지다이렉트</a></li>
+          <li><a href="#">빌리카</a></li>
+          <li><a href="#">스마트링크</a></li>
+        </ul>
+      </section>
+      <!-- //famSite -->
+    </div>
+    <!-- //contents -->
+  </body>
+</html>

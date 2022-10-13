@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/modal.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- 임시 컨텐츠 -->
+    <div class="contents">
+      모달 alertType 타입<br />헤더가 없는 페이지 예시<br />modalWrap에
+      noHeader가 붙습니다.<br />Header영역은 삭제합니다.
+    </div>
+    <!-- //임시 컨텐츠 -->
+
+    <!-- modal -->
+    <div class="modal">
+      <!-- modalWrap -->
+      <div class="modalWrap modalAlertType noHeader">
+        <!-- modalHeader - 헤더가 없는 타입은 이 부분 삭제 -->
+        <!-- //modalHeader -->
+
+        <!-- modalBody -->
+        <div class="modalBody">
+          <!-- 컨텐츠 내 타이틀이 있는 경우 -->
+          <p class="txtTitle">컨텐츠 내 타이틀있는 경우</p>
+          <!-- //컨텐츠 내 타이틀이 있는 경우 -->
+
+          <!-- 기본 텍스트 - 강조 텍스트에는 strong -->
+          <p class="txtCont">기본 텍스트 및 <strong>중요 텍스트</strong></p>
+          <!-- //기본 텍스트 - 강조 텍스트에는 strong -->
+
+          <!-- 기본 텍스트 아래에 description 있는 경우 -->
+          <p class="txtDesc">디스크립션 텍스트</p>
+          <!-- //기본 텍스트 아래에 description 있는 경우 -->
+        </div>
+        <!-- //modalBody -->
+
+        <!-- modalFooter -->
+        <div class="modalFixedWrap">
+          <div class="modalFooter">
+            <button type="button" class="btnFooterTxtBar">취소</button>
+            <button type="button" class="btnFooterTxtBar">확인</button>
+          </div>
+        </div>
+        <!-- //modalFooter -->
+      </div>
+      <!-- //modalWrap -->
+    </div>
+    <!-- //modal -->
+  </body>
+</html>

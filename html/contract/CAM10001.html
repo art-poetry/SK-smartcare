@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/contract/contract.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <h2>보험조건 변경</h2>
+        </div>
+        <div class="headerTools">
+          <button href="#" class="btnClose">
+            <span class="hidden">close</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="contents withFooterBtn">
+      <section class="insuranceChage procedure">
+        <dl>
+          <dt>보험조건 변경 절차</dt>
+          <dd>
+            <ul class="bulDotList">
+              <li>보험조건 변경 완료는 영업일 기준 최대 5일 정도 소요 됩니다.</li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+
+      <section class="insuranceChage conditions">
+        <h3>보험조건 변경하기</h3>
+
+        <div classs="certify">
+          <h4>휴대폰 인증</h4>
+          <!-- 휴대전화번호 입력 -->
+          <div class="formDivision">
+            <div class="inputBtnSet">
+              <input type="number" class="inputLine onlyNumEn" value="01012345678" placeholder="휴대폰번호 default로 생성">
+              <a href="#" class="btnOutlineRound">인증</a>
+            </div>
+          </div>
+          <!-- //휴대전화번호 입력 -->
+
+          <!-- 인증번호 입력 -->
+          <div class="formDivision">
+            <div class="inputBtnSet">
+              <input type="number" class="inputLine onlyNumEn" placeholder="전송된 인증번호를 입력하세요.">
+              <!-- 비활성화 disabled 클라스 추가 -->
+              <span class="timeCount">01:24</span>
+              <a href="#" class="btnOutlineRound disabled">확인</a><!-- 비활성화시 disabled 클래스 -->
+            </div>
+          </div>
+          <!-- //인증번호 입력 -->
+        </div>
+
+        <div class="changeInfo">
+          <h4>정보 변경</h4>
+          <dl>
+            <dt>연령<br>변경</dt>
+            <dd>
+              <ul>
+                <li>
+                  <em>변경전</em>
+                  <span>만 21세 이상</span>
+                </li>
+                <li>
+                  <em>변경후</em>
+                  <select class="selectCustom type2" name="sample">
+                    <option>선택해주세요.</option>
+                    <option>선택1</option>
+                    <option>선택2</option>
+                  </select>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>운전<br>대상</dt>
+            <dd>
+              <ul>
+                <li>
+                  <em>변경전</em>
+                  <span>만 21세 이상</span>
+                </li>
+                <li>
+                  <em>변경후</em>
+                  <select class="selectCustom type2" name="sample">
+                    <option>선택해주세요.</option>
+                    <option>선택1</option>
+                    <option>선택2</option>
+                  </select>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt><span>대물</span></dt><!-- 두 글자는 span 안에 넣어주세요 -->
+            <dd>
+              <ul>
+                <li>
+                  <em>변경전</em>
+                  <span>만 21세 이상</span>
+                </li>
+                <li>
+                  <em>변경후</em>
+                  <select class="selectCustom type2" name="sample">
+                    <option>선택해주세요.</option>
+                    <option>선택1</option>
+                    <option>선택2</option>
+                  </select>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+
+        <ul class="bulDotList">
+          <li>위 보험조건 정보변경에 따른 월 대여료 추가요금은 [조회하기] 버튼을 클릭하시면 확인하실 수 있습니다.</li>
+        </ul>
+
+      </section>
+
+      <section class="extraCharge flex">
+        <div class="rentalFee">
+          <p class="extra">월 대여료 추가 요금</p>
+          <span class="adjustment">(감액/증액료)</span>
+        </div>
+        <div class="btnInquiry">
+          <a href="#" class="btnSolidRound">조회하기</a>
+        </div>
+        <!-- 조회하기 클릭 시 -->
+        <p class="extraPrice" style="display:none;">
+          <span>121,000</span>원
+        </p>
+        <!-- 조회하기 클릭 시 -->
+      </section>
+
+      <ul class="bulDotList">
+        <li>
+          <strong>보험조건 변경에 따라 월 대여료가 기존 보험료에서 감액/증액 될 수 있습니다.</strong>
+        </li>
+        <li>보험조건변경 완료는 영업일 기준 최대 5일정도 소요됩니다.</li>
+        <li>
+          보험조건변경이 안되어 있거나 상세한 문의는 SK렌터카 고객센터(<span class="letterSpacing">1599-9111</span>)로 연락주시기 바랍니다.
+        </li>
+      </ul>
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <div class="btnFootBarWrap">
+      <button href="#" class="btnFooterYesNoBar">취소</button>
+      <button href="#" class="btnFooterYesNoBar">확인</button>
+    </div>
+    <!-- 버튼이 있는 경우과 없는 경우로 나뉘네요 -->
+    <!-- //footer -->
+  </body>
+</html>

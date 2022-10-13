@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <header class="header">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <h2>차량등록</h2>
+        </div>
+        <div class="headerTools">
+          <button href="#" class="btnClose">
+            <span class="hidden">close</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="contents">
+      <!-- pageDescription -->
+      <div class="pageDesc">
+        스마트케어의 다양한 제공 서비스를 이용하기 위해 이용중인 차량을
+        등록해 주세요.
+      </div>
+      <!-- //pageDescription -->
+
+      <!-- inputAreaVertical -->
+      <div class="inputAreaVertical">
+        <ul class="inputArea">
+          <li>
+            <label for="carNum" class="essential">차량번호</label>
+            <input
+              type="text"
+              class="inputLine"
+              id="carNum"
+              placeholder="차량번호를 입력해 주세요."
+            />
+          </li>
+          <li>
+            <label for="identifyNum" class="essential">차대번호</label>
+            <div class="inputLineFake">
+              <div class="obfuscationArea">
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+                <span class="obfuscation">&bull;</span>
+            </div>
+                <input
+                  type="number"
+                  class="inputRoundRect oneNum" 
+                  id="identifyNum"
+                />
+                <input
+                  type="number"
+                  class="inputRoundRect oneNum"
+                  id="identifyNum"
+                />
+                <input
+                  type="number"
+                  class="inputRoundRect oneNum"
+                  id="identifyNum"
+                />
+            </div>
+          </li>
+        </ul>
+        <ul class="bulDotList">
+          <li>차대번호 끝에서부터 3자리를 입력해 주세요.</li>
+        </ul>
+      </div>
+      <!-- //inputAreaVertical -->
+
+      <!-- howToCheck -->
+      <div class="howToCheck">
+        <h3>차대번호 확인방법</h3>
+        <ul class="bulDotList">
+          <li>차대번호 위치를 확인해 주세요.</li>
+          <li>실제 자동차등록증이나 보험 증서에 기재되어 있습니다.</li>
+          <li><strong>차대번호는 운전석 아래, 운전석 앞 유리, 운전석 도어에서 확인해 주세요.</strong></li>
+          <li>위치는 차량별로 상이할 수 있으며 자세한 위치는 아래 이미지를 참고해 주세요.
+            <img src="../../assets/img/sub/img_identifyNum.png" alt="차대번호 확인방법 이미지">
+          </li>
+        </ul>
+      </div>
+      <!-- //howToCheck -->
+
+    </div>
+    <!-- //contents -->
+
+    <!-- footer -->
+    <div class="btnFootBarWrap">
+      <button href="#" class="btnFooterColorBar">확인</button>
+    </div>
+    <!-- 버튼이 있는 경우과 없는 경우로 나뉘네요 -->
+    <!-- //footer -->
+  </body>
+</html>

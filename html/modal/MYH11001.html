@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/modal.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- 임시 컨텐츠 -->
+    <div class="contents">
+      모달 alertType 타입<br />헤더가 없는 차량번호 페이지<br />modalWrap에
+      noHeader가 붙습니다.<br />Header영역은 삭제합니다.
+    </div>
+    <!-- //임시 컨텐츠 -->
+
+    <!-- modal -->
+    <div class="modal">
+      <!-- modalWrap -->
+      <div class="modalWrap modalAlertType noHeader">
+        <!-- modalHeader - 헤더가 없는 타입은 이 부분 삭제 -->
+        <!-- //modalHeader -->
+
+        <!-- modalBody -->
+        <div class="modalBody">
+          <ul class="carNumList">
+            <!-- list unit -->
+            <li>
+              <div class="radioCustom">
+                <input type="radio" id="carNum1" name="carNum" />
+                <label for="carNum1"></label>
+              </div>
+              <label for="carNum1">49허9233<br /><span class="carModel">2020 그랜저 IG 2.5프리미엄</span></label>
+            </li>
+            <!-- //list unit -->
+            <!-- list unit -->
+            <li>
+              <div class="radioCustom">
+                <input type="radio" id="carNum2" name="carNum" />
+                <label for="carNum2"></label>
+              </div>
+              <label for="carNum2">49허9233<br /><span class="carModel">2020 그랜저 IG 2.5프리미엄</span></label>
+            </li>
+            <!-- //list unit -->
+            <!-- list unit -->
+            <li>
+              <div class="radioCustom">
+                <input type="radio" id="carNum3" name="carNum" />
+                <label for="carNum3"></label>
+              </div>
+              <label for="carNum3">49허9233<br /><span class="carModel">2020 그랜저 IG 2.5프리미엄</span></label>
+            </li>
+            <!-- //list unit -->
+          </ul>
+        </div>
+        <!-- //modalBody -->
+
+        <!-- modalFooter -->
+        <div class="modalFixedWrap">
+          <div class="modalFooter">
+            <button type="button" class="btnFooterTxtBar">취소</button>
+            <button type="button" class="btnFooterTxtBar">확인</button>
+          </div>
+        </div>
+        <!-- //modalFooter -->
+      </div>
+      <!-- //modalWrap -->
+    </div>
+    <!-- //modal -->
+  </body>
+</html>

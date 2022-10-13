@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: local(""),
+    url("../fonts/NotoSans/NotoSansKR-Light.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansKR-Light.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansKR-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""),
+    url("../fonts/NotoSans/NotoSansKR-DemiLight.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansKR-DemiLight.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansKR-DemiLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/NotoSans/NotoSansKR-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansKR-Regular.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/NotoSans/NotoSansKR-Medium.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansKR-Medium.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansKR-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/NotoSans/NotoSansKR-Bold.woff2") format("woff2"),
+    url("../fonts/NotoSans/NotoSansKR-Bold.woff") format("woff"),
+    url("../fonts/NotoSans/NotoSansKR-Bold.otf") format("opentype");
+}
+/* 영문,숫자 나눔고딕 적용 */
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/NanumGothic/NanumGothic.woff2") format("woff2"),
+    url("../fonts/NanumGothic/NanumGothic.woff") format("woff"),
+    url("../fonts/NanumGothic/NanumGothic.otf") format("opentype");
+  unicode-range: U+0020-007E;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/NanumGothic/NanumGothic.woff2") format("woff2"),
+    url("../fonts/NanumGothic/NanumGothic.woff") format("woff"),
+    url("../fonts/NanumGothic/NanumGothic.otf") format("opentype");
+  unicode-range: U+0020-007E;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/NanumGothic/NanumGothicBold.woff2") format("woff2"),
+    url("../fonts/NanumGothic/NanumGothicBold.woff") format("woff"),
+    url("../fonts/NanumGothic/NanumGothicBold.otf") format("opentype");
+  unicode-range: U+0020-007E;
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/NanumGothic/NanumGothicExtraBold.woff2") format("woff2"),
+    url("../fonts/NanumGothic/NanumGothicExtraBold.woff") format("woff"),
+    url("../fonts/NanumGothic/NanumGothicExtraBold.otf") format("opentype");
+  unicode-range: U+0020-007E;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: normal;
+  vertical-align: baseline;
+  letter-spacing: -0.05rem;
+  word-break: break-all;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+  -ms-overflow-style: scrollbar;
+}
+body {
+  color: #222;
+  background-color: transparent;
+  -webkit-text-size-adjust: none;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+details,
+menu,
+figure,
+figcaption {
+  display: block;
+}
+hr {
+  display: none;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  border: 0 none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  width: 100%;
+}
+ul,
+ol {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+legend,
+caption,
+.skip,
+.hidden {
+  position: absolute;
+  left: -9999px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+input,
+select,
+textarea,
+button {
+  border: 0;
+  background: none;
+  color: #222;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  vertical-align: middle;
+}
+button > span {
+  position: relative;
+}
+a {
+  color: #757575;
+  text-decoration: none;
+}
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none;
+  outline-offset: 0;
+}

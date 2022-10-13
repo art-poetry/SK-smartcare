@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+.article {
+    padding: 30px 0;
+}
+.article + .article,
+.article.typeBt {
+    border-top: 1px solid #eee;
+}
+.contents section:first-child .article .titleArea {
+    padding-top: 0;
+}
+/* 정비예약 */
+.gradientBg {
+    min-height: 215px;
+    padding-top: 35px;
+    color: #fff;
+    font-size: 21px;
+}
+.gradientBg .icon {
+    position: absolute;
+    right: 40px;
+    bottom: 90px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 66px;
+    text-align: center;
+    width: 67px;
+}
+.gradientBg .icon.repair {  
+    background: url('../../img/sub/icon_repair.svg') no-repeat;
+    background-size: 70px 65px;
+}
+.shadowBox {
+    margin-top: -60px;
+}
+.shadowBox .subText {
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    padding: 6px 10px;
+    border-radius: 18px;
+    color: var(--subTxtColor);
+}
+.shadowBox .textBox {
+    border-bottom: var(--line);
+    padding-bottom: 26px;
+}
+.shadowBox .textBox dt {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.shadowBox .textBox dd {
+    font-size: 15px;
+}
+.shadowBox .numList li {
+    margin-top: 20px;
+}
+.shadowBox .numList li:first-child {
+    margin-top: 0;
+}
+
+.shadowBox .numList li span {
+    color: var(--subTxtColor);
+    font-size: 12px;
+}
+.shadowBox .numList li em {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+}
+.textBox + .numList {
+    margin-top: 20px;
+}
+.orgBox {
+    width: 100%;
+    padding: 23px 0 25px;
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+    color: var(--mainColor);
+    text-align: center;
+}
+.orgBox dt {
+    font-size: 18px;
+    font-weight: 600;
+}
+.orgBox dd {
+    font-size: 18px;
+    font-weight: 300;
+}
+.shadowBox + .orgBox {
+    margin-top: 20px;
+}
+
+/* inputList */
+.inputList > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 5px;
+}
+.inputList > li > label,
+.inputList li span:nth-child(3) {
+    flex-shrink: 0;
+}
+.inputList > li > label {
+    width: 95px;
+    font-weight: 500;
+    padding: 12px 0;
+}
+.inputList li .formBox {
+    flex-grow: 1;
+    width: calc(100% - 155px);
+    border-bottom: 1px solid #eee;
+    padding: 12px 10px;   
+}
+.inputList li .formBox input[type=text] {
+    width: 100%;
+}
+.inputList li .formBox .inputWithBtn input[type=text] {
+    width: calc(100% - 80px);
+}
+.inputList input[type=text]:read-only {
+    background-color: #f6f6f6;
+    border-color: #eee;
+    color: #757575;
+}
+.inputList li.rowLine {
+    display: block;
+}
+.inputList li.rowLine > label,
+.inputList li.rowLine .formBox {
+    display: block;
+    width: 100%;
+    border-bottom: 0;
+}
+.inputList li.rowLine .formBox {
+    padding: 0;
+}
+.inputList li.thinLine {
+    padding-bottom: 0;
+}
+.inputList.repair {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+.inputList.repair .radioList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputList.repair .radioList .radioTitle {
+    flex-basis: 50%;
+    margin-top: 10px;
+}
+.inputList.repair .radioList label {
+    font-weight: 400;
+}
+.titleArea.type1 {
+    padding-bottom: 10px;
+    border-bottom: 0;
+}
+.titleArea.type2 {
+    border-bottom: 1px solid #222;
+}
+.subText {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #222;
+}
+.btnGhostRound.type1 {
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+}
+.checkList {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.checkList li {
+    margin-top: 10px;
+}
+.textArea {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.repairCheck {
+    position: relative;
+    font-size: 13px;
+    color: #222;
+}
+.repairCheck::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    background: url(../../img/sub/icon_check.svg) no-repeat;
+    background-size: 13px;
+    transform: translateY(-50%);
+}
+.repairCheck span {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+/* 정비예약 완료 */
+.resultConfirm .summaryArea {
+    position: relative;
+    padding: 143px 0 40px;
+    text-align: center;
+}
+.resultConfirm .summaryArea::before {
+    content: "";
+    width: 140px;
+    height: 84px;
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../../img/sub/img_repairComplete.png) no-repeat;
+    background-size: cover;
+}
+.resultConfirm .summaryArea .tit {
+    color: #222;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.resultConfirm .summaryArea span {
+    display: block;
+    font-size: 15px;
+}
+.tableFormType.repair {
+    border-top: 2px solid #222;
+    border-bottom: var(--line);
+    padding: 10px 0;
+}
+.tableFormType.repair .value {
+    font-weight: 400;
+}
+.tableFormType.repair .value,
+.repairList .tableFormType .value {
+    text-align: right;
+}
+.tableFormType.repair li .location em,
+.repairList .tableFormType .location em {
+    display: block;
+    font-style: normal;
+}
+.tableFormType.repair li:last-child,
+.repairList .tableFormType li:last-child {
+    padding-bottom: 8px;
+}
+
+/* 정비이력 */
+.repairList .foldlist span.status.cancel {
+    color:var(--subTxtColor);
+}
+.repairList .foldlist span.status.reserve {
+    color:var(--mainColor);
+}
+.repairList .tableFormType .value .list li {
+    padding: 5px 0;
+}
+.repairList .tableFormType .value .list li:first-child {
+    padding-top: 0;
+}
+.repairList .foldlist span.status.complete {
+    color: #48b9ff;
+}
+
+.totalArea {
+    margin: 15px 0 25px;
+}
+.totalArea p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #222;
+}
+.totalArea p span {
+    color: var(--mainColor);
+}
+.serviceBox {
+    margin-top: 20px;
+}
+.serviceBox .tableFormType {
+    flex-wrap: wrap;
+}
+.serviceBox .tableFormType.horizonType li {
+    flex-basis: 33.333%;
+}
+.serviceBox .tableFormType.horizonType li .property {
+    position: relative;
+    color: var(--subTxtColor);
+    font-size: 11px;
+    padding: 35px 0 5px;
+}
+.serviceBox .tableFormType.horizonType li .property::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.serviceBox .tableFormType.horizonType li .property.oil::before {
+    background-image:url("../../img/sub/icon_repair_oil.svg");
+    background-size: 22px auto;
+}
+.serviceBox .tableFormType.horizonType li .property.ac::before {
+    background-image:url("../../img/sub/icon_repair_ac.svg");
+    background-size: 22px auto;
+}
+.serviceBox .tableFormType.horizonType li .property.wiper::before {
+    background-image:url("../../img/sub/icon_repair_wiper.svg");
+    background-size: 28px auto;
+}
+.serviceBox .tableFormType.horizonType li .property.battery::before {
+    background-image:url("../../img/sub/icon_repair_battery.svg");
+    background-size: 22px auto;
+}
+.serviceBox .tableFormType.horizonType li .property.tire::before {
+    background-image: url("/assets/img/sub/ico_repair_tire.svg");
+    background-size: 22px auto;
+}
+.serviceBox .tableFormType.horizonType li .value {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 12px;
+    border-radius: 11px;
+    background-color: var(--mainColor);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .serviceBox .tableFormType.horizonType li .value.zeroTimes {
+    border: 1px solid var(--mainColor);
+    background-color: transparent;
+    color: var(--mainColor);
+  }
+/* 정비서비스 추가 */
+.repairTable {
+    margin-top: 25px;
+}
+.repairTable .tit {
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.repairTable .tit::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../img/sub/icon_cation.svg");
+    background-size: 15px;
+}
+.repairTable table {
+    margin-top: 20px;
+}
+.repairTable table th {
+    background-color: #f7f7f7;
+    font-size: 12px;
+    padding: 6px 0;
+    border: 2px solid #fff;
+}
+.repairTable table td {
+    font-size: 12px;
+    text-align: center;
+    padding: 8px 0;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 1px solid #eee;
+}
+.btnWrap {
+    margin-top: 20px;
+}
+.btnPdf {
+    font-size: 13px;
+    color: var(--subTxtColor);
+    border: 1px solid #ddd;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+.btnPdf span {
+    position: relative;
+    display: inline-block;
+    padding-left: 23px;
+}
+.btnPdf span::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url("../../img/sub/icon-pdf.png");
+    background-size: 15px;
+}
+.boxBtn {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.boxBtn a {
+    position: relative;
+    display: block;
+    padding: 25px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+}
+.boxBtn a::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: url(../../img/common/arrow_accordion_dark.svg) no-repeat 0 0 / 10px auto;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    margin-top: -5px;
+}
+.article h3 + h4 {
+    margin-top: 10px;
+}
+.bulDotList li ul {
+    margin-top: 5px;
+}
+.bulDotList li ul li {
+    color: var(--subTxtColor);
+    margin-top: 3px;
+    padding-left: 0;
+}
+.bulDotList li ul li::before {
+    display: none;
+}
+
+/* 아코디언 */
+.fold::before {content: ""; position:relative; left:-20px; display:block; width:calc(100% + 40px); border-top:var(--line);}
+.fold + .fold::before {border-top:0;}
+.fold::after {content: ""; position:relative; left:-20px; display:block; width:calc(100% + 40px); border-bottom:var(--line);}
+.fold.on .foldlist::before {-webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
+.fold.on .foldview {display:block;}
+
+.foldlist {position:relative; padding:25px 0 0;}
+.foldlist::before {content: ""; display:inline-block; position:absolute; top:55%; right:0; width:13px; height:7px; background: url("../../img/common/arrow_accordion_default.svg") no-repeat center / 13px auto;}
+.foldlist::after {content: ""; position:relative; left:-20px; display:block; width:calc(100% + 40px);}
+.foldlist span {display:block;}
+.foldlist span.status {font-size:12px; font-weight:bold; color:var(--subTxtColor); line-height:12px;}
+.foldlist span.status.complete {color:var(--mainColor);}
+.foldlist span.tit {width:95%; margin:15px 0 12px; font-size:15px; font-weight:bold; color:#222; line-height:20px;}
+.foldlist span.date {margin-bottom:25px; font-size:12px; color:var(--subTxtColor); line-height:12px;}
+
+.foldview {display:none; width:calc(100% + 40px); margin-left:-20px; padding:0 20px; font-size:13px; color:#222; border-top:var(--line); background:var(--bgGray);}
+.foldview p {padding:30px 0;}
+.foldview p.answer {border-top:var(--line);}
+.foldview p.answer span {display:block; margin-bottom:13px; font-size:15px; font-weight:bold;}
+.foldview p.answer span::before {content:''; display:inline-block; width:20px; height:20px; margin-right:8px; vertical-align:middle; background: url("../../img/common/ico_answer.svg") no-repeat center / 20px auto;}
+.foldview .btnArea {padding-bottom:25px; text-align:right;}
+.foldview .btnArea button {font-size:13px; font-weight:bold; color:#222;}
+.foldview .btnArea button + button::before {content:''; display:inline-block; width:3px; height:3px; margin:0 10px 0 7px; vertical-align:middle; background:#c7c7c7; border-radius:50%;}

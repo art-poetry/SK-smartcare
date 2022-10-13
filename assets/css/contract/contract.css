@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+.contactChoice {width:calc(100% + 40px); margin-left:-20px; padding:15px 20px; background:var(--bgGray);}
+.contactChoice .shadowBox {margin-bottom:0; box-shadow:none;}
+
+.contactInfo {width:calc(100% + 40px); margin:0 0 35px -20px; padding:25px 20px; background:var(--mainGradient);}
+.contactInfo > div {padding:26px 16px; background:#fff; border-radius:10px;}
+.contactInfo .tableFormType li .property {font-weight:700;}
+
+.contactInsurance h3 {position:relative; margin-bottom:10px; padding-bottom:18px; font-size:21px; font-weight:bold; border-bottom:var(--line);}
+.contactInsurance h3 span {position:absolute; top:3px; right:0; font-size:15px; color:var(--mainColor);}
+.tableFormType.type2 {margin-bottom:35px; padding:0 15px 20px; border-bottom:var(--line);}
+.tableFormType.type2 li {justify-content:left;}
+.tableFormType.type2 .property {width:35%; font-weight:700;}
+.tableFormType.type2 .value {width:65%; font-weight:300;}
+.tableFormType.type2 .value span {font-weight:700; color:var(--mainColor);}
+.tableFormType.type2 .value span::after {content:'*'; position:absolute;}
+
+.contactCondition {margin-bottom:30px; padding-bottom:20px; border-bottom:var(--line);}
+.contactCondition h3 {margin-bottom:15px; font-size:21px; font-weight:bold;}
+.contactCondition .btnSolid + .btnSolid {margin-top:10px;}
+.contactCondition .bulDotList {margin-top:15px;}
+
+.contactRepair h3 {position:relative; margin-bottom:10px; padding-bottom:18px; font-size:21px; font-weight:bold; border-bottom:var(--line);}
+.contactRepair h3 span {position:absolute; top:3px; right:0; font-size:15px; color:var(--mainColor);}
+
+.contactCertificate {padding-bottom:10px;}
+.contactCertificate h3 {position:relative; padding-bottom:18px; font-size:21px; font-weight:bold;}
+.contactCertificate h3::after {content:''; position:absolute; top:10px; right:0; width:10px; height:10px; background:url("../../img/common/arrow_accordion_dark.svg") no-repeat 0 0 / 10px auto}
+.contactCertificate.on h3::after {-webkit-transform:rotate(180deg); -ms-transform:rotate(180deg); transform:rotate(180deg);}
+.contactCertificate .btnSolid + .btnSolid {margin-top:10px;}
+
+.contactCertificate li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 54px;
+  padding-left: 5px;
+  border-bottom: var(--line);
+}
+.contactCertificate li h4 {
+  flex-basis: 95px;
+}
+.contactCertificate h4 {
+  font-weight: 700;
+}
+.contactCertificate li a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background:url("../../img/sub/ico_download.svg") no-repeat 5px 5px / 25px auto;
+}
+.contactCertificate .selectUsageArea .selectCustom, 
+.contactCertificate .selectMonthArea {
+  color: var(--subTxtColor);
+  font-size: 13px;
+  font-weight: 700;
+}
+.contactCertificate .selectUsageArea .selectCustom {
+  margin-top: 4px;
+}
+.contactCertificate li a.selectMonth {
+  width: auto;
+  height: auto;
+  background:url("../../img/common/ico_calendar.svg") no-repeat right center / 13px auto;
+}
+.contactCertificate li .selectedMonth {
+  padding-right: 20px;
+}
+.contactCertificate .selectUsageArea,
+.contactCertificate .selectMonthArea {
+  flex-basis: calc(100% - 170px);
+  position: relative;
+}
+.contactCertificate .selectUsageArea::before,
+.contactCertificate .selectMonthArea::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 9px;
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+}
+.insureCertificate {padding:30px 0; border-bottom:var(--line);}
+.insureCertificate h3 {padding-bottom:18px; font-size:21px; font-weight:bold;}
+
+.contactPenalty {padding:30px 0;}
+.contactPenalty h3 {padding-bottom:18px; font-size:21px; font-weight:bold;}
+
+.contactInspection {padding: 10px 0 80px;}
+.contactInspection ul li {padding:35px 0 20px;}
+.contactInspection ul li + li {border-top:var(--line);}
+.contactInspection ul li span {display:block;}
+.contactInspection ul li .manager {font-size:21px; font-weight:bold;}
+.contactInspection ul li .managerDetail {margin-top:20px; font-size:15px; font-weight:500;}
+.contactInspection ul li li {padding:0 0 0 10px; font-size:15px;}
+
+.insuranceChage::after {content:''; position:relative; left:-20px; display:block; width:calc(100% + 40px); border-bottom:var(--line);}
+.insuranceChage.bdn::after {display:none;}
+.insuranceChage.procedure dl {padding:25px 0 20px;}
+.insuranceChage.procedure dl dt {font-size:15px; font-weight:bold;}
+.insuranceChage.procedure dl .bulDotList li {font-size:15px;}
+
+.insuranceChage.conditions {padding-top:35px;}
+.insuranceChage.conditions h3 {padding-bottom:12px; font-size:17px; font-weight:bold; border-bottom:1px solid #222;}
+.insuranceChage.conditions h4 {margin-top:15px; padding-bottom:10px; border-bottom:var(--line);}
+.insuranceChage.conditions .inputBtnSet .timeCount {right:62px;}
+.insuranceChage.conditions .changeInfo {padding-top:10px;}
+.insuranceChage.conditions .changeInfo dl {display:flex; border-bottom:var(--line);}
+.insuranceChage.conditions .changeInfo dl dt {width:25%; padding-top:40px; font-weight:bold; text-align:center; line-height:20px;}
+.insuranceChage.conditions .changeInfo dl dt span {display:inline-block; padding-top:13px;}
+.insuranceChage.conditions .changeInfo dl dd {width:75%;}
+.insuranceChage.conditions .changeInfo dl dd ul li {display:inline-block; width:100%; min-height:59px;}
+.insuranceChage.conditions .changeInfo dl dd ul li + li {border-top:var(--line);}
+.insuranceChage.conditions .changeInfo dl dd ul li em {display:inline-block; margin-top:16px; font-style:normal;}
+.insuranceChage.conditions .changeInfo dl dd ul li span {display:block; float:right; width:70%; margin-top:15px; padding-right:12px; font-weight:bold; text-align:right;}
+.insuranceChage.conditions .changeInfo dl dd ul li .selectCustom.type2 {float:right; width:75%; margin-top:10px;}
+.insuranceChage.conditions .bulDotList {margin:15px 0 35px;}
+.insuranceChage.conditions .tableFormType li {padding:10px 0; border-bottom:var(--line);}
+.insuranceChage.conditions .tableFormType li:last-child {padding-bottom:15px;}
+.insuranceChage.conditions .tableFormType .property {font-weight:500;}
+.insuranceChage.conditions .tableFormType .value {font-weight:500;}
+
+.insuranceChage.conditions .changeInfo .inputList li {display:flex; justify-content:space-between; align-items:baseline; margin-top:5px;}
+.insuranceChage.conditions .changeInfo .inputList li > label,
+.insuranceChage.conditions .changeInfo .inputList li span:nth-child(3) {flex-shrink:0;}
+.insuranceChage.conditions .changeInfo .inputList li > label {width:95px; font-weight:500; padding:12px 0;}
+.insuranceChage.conditions .changeInfo .inputList li > label::after {content:'*'; position:absolute;}
+.insuranceChage.conditions .changeInfo .inputList li .formBox { flex-grow:1; width:calc(100% - 155px); border-bottom:1px solid #eee; padding:12px 0; padding-left:10px;}
+
+.extraCharge {width:calc(100% + 40px); margin:0 0 20px -20px; padding:0 20px; min-height:97px; border-bottom:var(--line);}
+.extraCharge .rentalFee .extra {font-size:17px; font-weight:600;}
+.extraCharge .extraPrice {}
+
+/* 위약금 조회 (ksa) */
+.penaltyCheck .bulDotList {
+  margin: 25px 0;
+}
+.penaltyCheckItems {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid #222;
+}
+.penaltyCheckItems li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--line);
+}
+.penaltyCheckItems li .classify {
+  align-self: center;
+  flex-basis: 24%;
+  padding: 0 15px;
+  font-weight: 500;;
+  text-align: center;
+}
+.penaltyCheckItems li ul {
+  flex-basis: 76%;
+}
+.penaltyCheckItems li ul li {
+  padding: 8px 10px;
+  min-height: 40px;
+}
+.penaltyCheckItems li ul li:last-child {
+  padding-bottom: 8px;
+  border-bottom: 0 none;
+}
+.penaltyCheckItems li .amount {
+  position: relative;
+  flex-basis: 100%;
+  height: 45px;
+  background-color: var(--bgGray);
+}
+.penaltyCheckItems li .amount::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #222;
+}
+.penaltyCheckItems li .amount li {
+  min-height: 45px;
+  padding: 9px 10px;
+}
+.penaltyCheckItems li .amount .property {
+  font-weight: 500;
+}
+.penaltyCheckItems li .amount .value {
+  color: var(--mainColor);
+}
+.penaltyCheckItems li .amount li  {
+  padding-bottom: 12px;
+}

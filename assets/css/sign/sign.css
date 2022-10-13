@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* sign */
+/* logoBox */
+.logoBox {
+  margin: 0 auto;
+  padding: 45px 0 25px;
+  text-align: center;
+}
+.logoBox h1 {
+  display: inline-block;
+  width: 100px;
+  height: 54px;
+  background: url("../../img/common/logo_smartcare.svg") no-repeat center / 70px auto;
+  text-indent: -9999px;
+}
+/* 로고 하단 텍스트 h3로 */
+.logoBox h3 {
+  padding-top: 18px;
+  line-height: 1.6rem;
+}
+
+/* 로그인 form영역 */
+.signArea {
+  margin-bottom: 40px;
+}
+/* 로그인 input */
+.signArea .inputRoundRect {
+  height: 50px;
+  border-color: #ddd;
+  border-radius: 7px;
+}
+.autoCheck {
+  margin: 10px 0;
+}
+.signFormArea button {
+  margin-top: 20px;
+}
+.signMenus {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.signMenus li {
+  position: relative;
+  padding: 0 10px;
+  text-align: center;
+}
+.signMenus li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #c7c7c7;
+}
+.signMenus li:first-child::before {
+  content: none;
+}
+.signMenus li a {
+  color: #222;
+  font-weight: 300;
+}
+

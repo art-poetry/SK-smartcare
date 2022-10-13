@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>SMART CARE</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- 스크롤 시 클래스 "onBorder" 추가 / 맨 위로 왔을때 "onBorder" 삭제 / 헤더 아래에 보더가 없는 디자인 "noBorder" 추가 -->
+    <!-- header main는 스크롤이 되는 순간 main클래스 삭제 -->
+    <header class="header main">
+      <!-- headerWrap -->
+      <div class="headerWrap">
+        <div class="headerTitle">
+          <h1 class="hidden">SK렌터카</h1>
+          <a href="#" class="logo"></a>
+        </div>
+        <div class="headerTools">
+          <a href="#" class="btnAlarm new"><span class="hidden">alarm</span></a>
+          <button href="#" class="btnMenuOpen">
+            <span class="hidden">menu</span>
+          </button>
+        </div>
+      </div>
+      <!-- //headerWrap -->
+    </header>
+    <!-- //header -->
+
+    <!-- contents / main -->
+    <div class="contents main">
+      <!-- mainSummary -->
+      <section class="gradientBg">
+        <div class="ownCarInfo">
+          <p class="classify">법인계약자</p>
+          <p class="ownCar">보유차량<span class="ownCarNum">3</span>대</p>
+        </div>
+        <ul class="ownCarDesc">
+          <li>운전자:<span class="value">홍길동</span></li>
+        </ul>
+
+        <!-- 차량사진 -->
+        <div class="carModelPhoto">
+          <img
+            src="../assets/img/sub/spark@3x.png"
+            alt="쉐보레 2019 THE NEW 스파크"
+          />
+        </div>
+        <!-- //차량사진 -->
+      </section>
+      <!-- //mainSummary -->
+
+      <!-- infoListBox -->
+      <section class="infoListArea">
+
+        <!-- boxCarList -->
+        <div class="shadowBox">
+          <div class="linkWithArrow">
+            <a href="#">
+              <span class="title"
+                ><span class="letterSpacing">39</span>하<span class="carNum"
+                  >9155</span
+                ></span
+              >
+              <span class="carModel">쉐보레 2019 THE NEW 스파크</span>
+            </a>
+          </div>
+        </div>
+        <!-- //boxCarList -->
+
+        <!-- boxContractInfo -->
+        <div class="shadowBox">
+          <h3>계약정보</h3>
+          <ul class="tableFormType">
+            <li>
+              <div class="property">기간</div>
+              <div class="value">2020.12.21~2024.12.20</div>
+            </li>
+            <li>
+              <div class="property">월 렌탈료</div>
+              <div class="value"><strong>643,000원</strong></div>
+            </li>
+            <li>
+              <div class="property">연간 약정거리</div>
+              <div class="value">무제한</div>
+            </li>
+          </ul>
+        </div>
+        <!-- //boxContractInfo -->
+
+        <!-- boxInsureInfo -->
+        <div class="shadowBox">
+          <h3>보험정보</h3>
+          <ul class="tableFormType">
+            <li>
+              <div class="property">보험연령</div>
+              <div class="value">만 26세이상</div>
+            </li>
+            <li>
+              <div class="property">운전자 범위</div>
+              <div class="value">본인</div>
+            </li>
+            <li>
+              <div class="property">사고건당 면책금</div>
+              <div class="value"><strong>643,000원</strong></div>
+            </li>
+          </ul>
+        </div>
+        <!-- //boxInsureInfo -->
+
+        <!-- boxMonthlyBill -->
+        <div class="shadowBox">
+          <h3>이번 달 납부금액</h3>
+          <ul class="tableFormType">
+            <li>
+              <div class="property">
+                3월 납부금액<span class="desc">21.02.01 ~ 21.02.28</span>
+              </div>
+              <div class="value alignSelfTop"><strong>1,039,200원</strong></div>
+            </li>
+            <li>
+              <div class="property">미납금액</div>
+              <div class="value"><strong>0원</strong></div>
+            </li>
+          </ul>
+        </div>
+        <!-- //boxMonthlyBill -->
+
+        <!-- boxRepairService -->
+        <div class="shadowBox repairArea">
+          <h3>이용중인 정비상품</h3>
+          <div class="repairPackage">
+            <div class="flex">
+              <h4>실속</h4>
+              <div class="repairDate">
+                <p>정비예정일</p>
+                <span class="date">3월 28일 13:00~15:00 방문</span>
+              </div>
+            </div>
+            <div class="repairPackageDesc">
+              <p>교체 빈도가 많은 주요 소모품 교체</p>
+              <p>방문점검 제공 서비스</p>
+            </div>
+          </div>
+          <ul class="tableFormType horizonType">
+            <li class="oil">
+              <div class="property">엔진오일</div>
+              <div class="value">1회</div>
+            </li>
+            <li class="filter">
+              <div class="property">에어컨필터</div>
+              <div class="value">1회</div>
+            </li>
+            <li class="wiper">
+              <div class="property">와이퍼(앞)</div>
+              <div class="value">1회</div>
+            </li>
+            <li class="battery">
+              <div class="property">배터리</div>
+              <div class="value zeroTimes">0회</div>
+              <!-- 0회는 스타일이 다름 zeroTimes 클래스 적용 -->
+            </li>
+            <li class="tire">
+              <div class="property">타이어</div>
+              <div class="value zeroTimes">0회</div>
+              <!-- 0회는 스타일이 다름 zeroTimes 클래스 적용 -->
+            </li>
+          </ul>
+        </div>
+        <!-- //boxRepairService -->
+
+        <!-- boxLastMonthDriveInfo -->
+        <div class="shadowBox">
+          <h3>나의 운전 현황 <span>(최근 한달)</span></h3>
+          <ul class="tableFormType horizonType">
+            <li>
+              <div class="property">총 주행거리</div>
+              <div class="value"><span class="numBig">20,500</span>km</div>
+            </li>
+            <li>
+              <div class="property">이번달 연비</div>
+              <div class="value"><span class="numBig">30</span>km/l</div>
+            </li>
+            <li>
+              <div class="property">이번달 안전점수</div>
+              <div class="value"><span class="numBig">90</span>점</div>
+            </li>
+          </ul>
+        </div>
+        <!-- //boxLastMonthDriveInfo -->
+        
+      </section>
+      <!-- //infoListBox -->
+
+      <!-- bannerArea -->
+      <section>
+        <ul class="bannerArea">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <ol class="indicators">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ol>
+      </section>
+      <!-- //bannerArea -->
+
+      <!-- siteInfo -->
+      <section>
+        <!-- customerArea -->
+        <div class="customerArea">
+          <div class="customerCenter">
+            <h5>고객센터</h5>
+            <p class="customerNum">1599-9111</p>
+            <p class="customerDesc">
+              평일&nbsp;<span class="letterSpacing">09:00~18:00</span
+              ><br />토요일 및 공휴일 휴무
+            </p>
+          </div>
+          <!-- snsLink -->
+          <ul class="snsLink clear">
+            <li class="facebook">
+              <a href="https://www.facebook.com/SKRentacarsns/" target="_blank"
+                ><span class="hidden">페이스북</span></a
+              >
+            </li>
+            <li class="insta">
+              <a
+                href="https://www.instagram.com/skrentacar_official"
+                target="_blank"
+                ><span class="hidden">인스타그램</span></a
+              >
+            </li>
+            <li class="youtube">
+              <a
+                href="https://www.youtube.com/channel/UCDe3b6iSfqQiXHyAUEKT3NQ/featured"
+                target="_blank"
+                ><span class="hidden">유튜브</span></a
+              >
+            </li>
+            <li class="blog">
+              <a
+                href="https://blog.naver.com/skrentacar_official/"
+                target="_blank"
+                ><span class="hidden">네이버블로그</span></a
+              >
+            </li>
+            <li class="post">
+              <a
+                href="https://post.naver.com/my.nhn?memberNo=49367229"
+                target="_blank"
+                ><span class="hidden">네이버포스트</span></a
+              >
+            </li>
+          </ul>
+          <!-- //snsLink -->
+        </div>
+        <!-- //customerArea -->
+
+        <!-- termsArea -->
+        <div class="termsArea">
+          <ul class="termsMenu">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">위치정보 이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+          </ul>
+        </div>
+        <!-- //termsArea -->
+
+        <!-- authArea -->
+        <div class="authArea accordion">
+          <div class="accordionItem">
+            <button class="authTitle accordionHeader">SK렌터카(주)</button>
+            <ul class="accordionBody">
+              <li>
+                주소: 서울특별시 구로구 서부샛길&nbsp;
+                <span class="letterSpacing">822</span>&nbsp;(구로동)
+              </li>
+              <li>
+                대표이사: 현몽주&nbsp;
+                <span class="classifyList"
+                  >사업자번호:&nbsp;
+                  <span class="letterSpacing">113-81-32864</span></span
+                >
+              </li>
+              <li>
+                통신판매업신고: 구로구청 제&nbsp;<span class="letterSpacing"
+                  >2006-03389</span
+                >
+              </li>
+              <li><span class="letterSpacing">TEL: 1599-9111</span></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <span class="copyrightC">COPYRIGHT</span
+            ><span class="letterSpacing">SK</span>렌터카.
+            <span class="letterSpacing">All Rights Reserved.</span>
+          </div>
+        </div>
+        <!-- //authArea -->
+      </section>
+      <!-- //siteInfo -->
+    </div>
+    <!-- //contents / main -->
+  </body>
+</html>

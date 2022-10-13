@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+.article {
+    padding: 30px 0;
+}
+/* 사고접수 현황 */
+.accStep {
+    margin-top: 30px;
+}
+.accStep ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+.accStep ol li {
+    display: flex;
+    position: relative;
+    width: 33.333%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 26px;
+}
+.accStep ol li::before {
+    content: '>';
+    position: absolute;
+    right: 0;
+    top: 48px;
+    font-size: 11px;
+    color: var(--subTxtColor);
+}
+.accStep ol li:nth-child(3n)::before {
+    display: none;
+}
+.accStep ol li span {
+    display: block;
+    font-size: 13px;
+}
+.accStep ol li .num {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-weight: 800;
+    color: var(--mainColor);
+    text-align: center;
+    border: 1px solid var(--mainColor);
+    border-radius: 50%;
+}
+.accStep ol li .state {
+    margin-top: 12px;
+    color: var(--subTxtColor);
+}
+.accStep ol li .date {
+    margin-top: 5px;
+    color: var(--subTxtColor);
+}
+.accStep ol li.on .num {
+    color: #fff;
+    background-color: var(--mainColor);
+}
+.accStep ol li.on .state {
+    font-weight: 500;
+    color: #222;
+}
+.accStep ol li .date {
+    font-weight: 500;
+    color: #222;
+}
+.noAccident {
+    padding: 50px 0;
+    text-align: center;
+}
+.totalArea {
+    margin: 15px 0 25px;
+}
+.totalArea p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #222;
+}
+.totalArea p span {
+    color: var(--mainColor);
+}
+
+/* 사고이력 */
+.tableFormType .rowLine {
+    display: block;
+}
+.tableFormType .rowLine .photoList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+.tableFormType .rowLine .photoList .item {
+    position: relative;
+    flex-basis: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 9px;
+    font-weight: 400;
+    color: #c7c7c7;
+}
+.tableFormType .rowLine .photoList .item span {
+    position: relative;
+    display: inline-block;
+    max-width: 74px;
+    max-height: 59px;
+    margin: 0 5px;
+}
+.tableFormType .rowLine .photoList .item.noImg span{
+    padding: 20px 0;
+}
+.tableFormType .rowLine .photoList .item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 59px;
+    border-radius: 10%;
+}
+.accidentList .photoList {
+    margin-top: 10px;
+}
+
+/* 버튼박스 */
+.btnBox.typeVer button + button {
+    margin-top: 20px;
+}
+
+/* 아코디언 */
+.fold::before {content: ""; position:relative; left:-20px; display:block; width:calc(100% + 40px); border-top:var(--line);}
+.fold + .fold::before {border-top:0;}
+.fold::after {content: ""; position:relative; left:-20px; display:block; width:calc(100% + 40px); border-bottom:var(--line);}
+.fold.on .foldlist::before {-webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
+.fold.on .foldview {display:block;}
+
+.foldlist {position:relative; padding:25px 0 0;}
+.foldlist::before {content: ""; display:inline-block; position:absolute; top:55%; right:0; width:13px; height:7px; background: url("../../img/common/arrow_accordion_default.svg") no-repeat center / 13px auto;}
+.foldlist::after {content: ""; position:relative; left:-20px; display:block; width:calc(100% + 40px);}
+.foldlist span {display:block;}
+.foldlist span.status {font-size:12px; font-weight:bold; color:var(--subTxtColor); line-height:12px;}
+.foldlist span.status.complete {color:var(--mainColor);}
+.foldlist span.tit {width:95%; margin:15px 0 12px; font-size:15px; font-weight:bold; color:#222; line-height:20px;}
+.foldlist span.date {margin-bottom:25px; font-size:12px; color:var(--subTxtColor); line-height:12px;}
+
+.foldview {display:none; width:calc(100% + 40px); margin-left:-20px; padding:0 20px; font-size:13px; color:#222; border-top:var(--line); background:var(--bgGray);}
+.foldview p {padding:30px 0;}
+.foldview p.answer {border-top:var(--line);}
+.foldview p.answer span {display:block; margin-bottom:13px; font-size:15px; font-weight:bold;}
+.foldview p.answer span::before {content:''; display:inline-block; width:20px; height:20px; margin-right:8px; vertical-align:middle; background: url("../../img/common/ico_answer.svg") no-repeat center / 20px auto;}
+.foldview .btnArea {padding-bottom:25px; text-align:right;}
+.foldview .btnArea button {font-size:13px; font-weight:bold; color:#222;}
+.foldview .btnArea button + button::before {content:''; display:inline-block; width:3px; height:3px; margin:0 10px 0 7px; vertical-align:middle; background:#c7c7c7; border-radius:50%;}
